@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .el {
+            background: #000;
+            width: 40px;
+            height: 40px;
+        }
+        svg {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        
+        </div>
+    </header>
+    <main class="motion-path-demo">
+        <div class="el"></div>
+        <svg  width="1213" height="715" viewBox="0 0 1213 715" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1212.5 4.50001C1109.33 -13.8333 866.3 34.1 719.5 372.5C572.7 710.9 179 734.833 0.5 704.5" stroke="black"/>
+            </svg>
+            
+    </main>
+    <footer>
+        <div class="footer">
+        @&copy;  Copyright Reserved
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+
+    <script>
+        var path = anime.path('.motion-path-demo path');
+
+        anime({
+            targets: '.motion-path-demo .el',
+            translateX: path('x'),
+            translateY: path('y'),
+            rotate: path('angle'),
+            easing: 'linear',
+            duration: 2000,
+            loop: true
+          });
+    </script>
+</body>
+</html>
