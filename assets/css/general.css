@@ -50,7 +50,8 @@ h3 {
 /* 2. Header */
 .header {
     /* background: var(--primary-color); */
-    padding: 0.7rem 5rem ;
+    padding: 0.7em 5em ;
+    padding-left: 8em;
     /* border-radius: var(--border-radius--lg); */
     position: fixed;
     top: 0;
@@ -185,7 +186,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 4em;
+  padding: 2em 4em;
   padding-top: 2em;
   text-align: left;
 }
@@ -221,6 +222,7 @@ h3 {
 
 .banner_sect {
   height: 82vh;
+  min-height: 380px;
   background: linear-gradient(103.81deg, #1F0098 8.93%, #05D7F0 91.07%);
   /* background: url(./bg.svg); */
   background-repeat: no-repeat;
@@ -231,10 +233,24 @@ h3 {
   /* background-attachment: ; */
 }
 
+.banner_sect.banner_sect--big {
+  height: 100vh;
+}
+
+.banner_sect h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.banner_sect :is(h1, p) {
+  color: #fff;
+}
+
 .banner_wave {
   margin-top: -100%;
   position: relative;
-  top: -18px;
+  top: -17px;
   width: 100%;
 }
 
@@ -481,4 +497,23 @@ Footer Contact Section
         display: flex;
     }
 
+}
+
+
+.highlight_text {
+  color: var(--secondary-color);
+}
+
+.underline_text {
+  position: relative;
+}
+.underline_text::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  height: 18px;
+  width: 150px;
+  left: -40px;
+  z-index: -1;
+  background: var(--primary-color);
 }

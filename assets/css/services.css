@@ -1,61 +1,5 @@
-    
 
-.sect {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4em;
-    /* padding-top: 2em; */
-    text-align: left;
-}
-
-.sect_col {
-    flex-direction: column;
-    text-align: center;
-}
-
-.sect_text {
-    padding: 4em;
-    padding-top: 0;
-    width: 60%;	
-}
-
-.socials {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 4em;
-}
-
-.socials a {
-    color: #ffffff;
-    transition: 200ms all ease
-}
-.socials a:hover {
-    transform: translateY(-5px);
-    color: var(--secondary-color);
-    
-}
-
-.banner_sect {
-    height: 82vh;
-    background: linear-gradient(103.81deg, #1F0098 8.93%, #05D7F0 91.07%);
-    /* background: url(./bg.svg); */
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    color: #fff;
-    background-position: center;
-
-    /* background-attachment: ; */
-}
-
-.banner_wave {
-    margin-top: -100%;
-    position: relative;
-    top: -18px;
-    width: 100%;
-}
-
+]
 .services_sect {
 }
 
@@ -238,62 +182,6 @@
     background: #000;
 }
 
-footer {
-    min-height: 70vh;
-    padding: 0 4em;
-    padding-top: 200px;
-    background: linear-gradient(103.81deg, #1F0098 8.93%, #05D7F0 91.07%);
-    /* display: flex; */
-    text-align: center;
-    color: #fff;
-}
-
-.footer_header {
-    padding: 1em;
-}
-
-.footer_ctas, .footer_nav, footer .socials {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-}
-.footer_ctas .cta_box {
-    padding: 1em;
-    border: 1px solid #000;
-}
-
-.footer_nav {
-    list-style: none;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #fff;
-}
-
-footer .copyright {
-    padding: 1em;	
-}
-footer .socials {
-    padding: 1em;	
-}
-
-.highlight_text {
-    color: var(--secondary-color);
-}
-
-.underline_text {
-    position: relative;
-}
-.underline_text::before {
-    position: absolute;
-    content: '';
-    bottom: 0;
-    height: 13px;
-    width: 180%;
-    left: -10px;
-    z-index: -1;
-    background: var(--primary-color);
-}
 @media screen and (max-width: 840px) {
     .socials {
         text-align: center;

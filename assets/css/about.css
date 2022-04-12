@@ -32,14 +32,14 @@ p {
   line-height: 26px;
   color: var(--cardTextColor);
 }
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   color: var(--cardTextColor);
-}
+} */
 a {
   text-decoration: none;
   color: var(--clr-white);

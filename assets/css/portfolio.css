@@ -196,23 +196,7 @@ footer .socials {
     padding: 1em;	
 }
 
-.highlight_text {
-    color: var(--secondary-color);
-}
 
-.underline_text {
-    position: relative;
-}
-.underline_text::before {
-    position: absolute;
-    content: '';
-    bottom: 0;
-    height: 13px;
-    width: 180%;
-    left: -10px;
-    z-index: -1;
-    background: var(--primary-color);
-}
 @media screen and (max-width: 840px) {
     .socials {
         text-align: center;
