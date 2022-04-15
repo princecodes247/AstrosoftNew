@@ -1,4 +1,5 @@
-const iconsContainer = document.getElementsByClassName("card-social-icons");
+const setupAbout = () => {
+  const iconsContainer = document.getElementsByClassName("card-social-icons");
 const iconsButton = document.getElementsByClassName("dash-button");
 
 
@@ -77,7 +78,7 @@ function showPerson() {
   personName.textContent = person.name;
 }
 
-const setupTes = () => {
+
   const nextButton = document.getElementById("next-arrow");
 const prevButton = document.getElementById("prev-arrow");
 nextButton.addEventListener("click", () => {
@@ -102,4 +103,5 @@ prevButton.addEventListener("click", () => {
   carousels[defaultIndex + 1].style.backgroundColor = "#979797";
   showPerson();
 });
+
 }

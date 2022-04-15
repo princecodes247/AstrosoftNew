@@ -25,4 +25,9 @@ featuresSect.addEventListener("mouseleave", () => {
     });
 }
 
-setupFeaturesEffect()
+try {
+  setupFeaturesEffect()
+} catch (error) {
+  console.log(error);
+  
+}

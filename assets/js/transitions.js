@@ -1,5 +1,8 @@
 
 
+  history.scrollRestoration = 'manual';
+
+
  const enterAnimation = container => {
    let entertl = gsap.timeline({defaults: {ease: Power4.easeInOut}});
 
@@ -43,11 +46,26 @@
             done();
          },
       async enter(data) {
-            
+        window.scrollTo(0, 0);
             enterAnimation();
             setupHeader()
             try {
               setupFeaturesEffect()
+            } catch (error) {
+              console.log(error);
+            }
+            try {
+              setupTeam()
+            } catch (error) {
+              console.log(error);
+            }
+            try {
+              setupTestimonials()
+            } catch (error) {
+              console.log(error);
+            }
+            try {
+              setupFaqs()
             } catch (error) {
               console.log(error);
             }
@@ -60,10 +78,4 @@
          
    }
    }]
- });
-
- barba.hooks.after(() => {
-  
-  
-  console.log("after hit")
  });

@@ -1,4 +1,5 @@
-const iconsContainer = document.getElementsByClassName("card-social-icons");
+const setupTeam = () => {
+  const iconsContainer = document.getElementsByClassName("card-social-icons");
 const iconsButton = document.getElementsByClassName("dash-button");
 const navButton = document.getElementById("nav-menu");
 const sideBarMenu = document.querySelector(".sidebar-menu");
@@ -180,3 +181,11 @@ teamPrevIcon.addEventListener("click", () => {
   }
   changeClient();
 });
+}
+
+try {
+  setupTeam();
+} catch (error) {
+  console.log(error);
+  
+}
