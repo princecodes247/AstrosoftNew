@@ -157,36 +157,8 @@
 .blank_sect {
     height: 50vh;
 }
-.contact_sect {
-    color: #22343D;
-    position: relative;
-    z-index: 3;
-    width: 80%;
-    min-height: 50vh;
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: -150px;
-    border-radius: var(--border-radius--lg);
-    background: #F7FBFF url("./map-bg.svg") no-repeat;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    overflow: hidden;
-}
 
-.contact_sect .sect_text .sect_text--small:is(::before, ::after) {
-    /* width: 50%; */
-    position: relative;
-    content: '';
-    width: 10px;
-    height: 10px;
-    background: #000;
-}
-
-@media screen and (max-width: 840px) {
-    .socials {
-        text-align: center;
-        justify-content: center;
-    }
+@media screen and (max-width: 1024px) {
     .services_sect {
         padding: 1em;
     }
@@ -198,14 +170,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .sect, .sect_col {
-        flex-direction: column;
-    }
-    .sect_text {
-        width: 100%;
-        padding: 4em 0;
-        text-align: center;
-    }
+ 
 }
 @media screen and (max-width: 640px) {
     
@@ -220,14 +185,6 @@
     .experience_sect .sect_text {
         text-align: left;
         width: 100%;
-    }
-    
-.contact_sect {
-    margin-bottom: -13em;
-}
-    .contact_sect .sect_text {
-        width: 100%;
-        text-align: center;
     }
 }
 

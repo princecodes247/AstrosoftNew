@@ -6,25 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astrosoft</title>
     <link rel="stylesheet" href="./assets/css/general.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="stylesheet" href="./assets/css/services.css" />
     <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/team.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
 </head>
-  <body>
+  <body data-barba="wrapper">
+    <div class="loading_cover" id="loading_cover__back"></div>
+    <div class="loading_cover" id="loading_cover__mid"></div>
+    <div class="loading_cover" id="loading_cover__front">
+    <img width="200px" src="./assets/images/ASTRO LOGO Solo.svg" alt="">
+  </div>
     <header class="header">
       <div class="logo">
-          AstroSoft
+          <img  src="./assets/images/logo.png" alt="">
       </div>
       <ul class="nav-links">
-          <li><a href="/index.html">Home</a></li>
-          <li>
-            <a href="/about.html"
-              >About
-              <div class="underline"></div>
-            </a>
-          </li>
+          <li class="nav_link--active"><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
           <li><a href="/services.html">Services</a></li>
-          <li class="nav_link--active"><a href="/portfolio.html">Portfolio</a></li>
-          <li><a href="/contact.html">Team</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/team.html">Team</a></li>
           
           <li>
               <button class="button">
@@ -38,8 +41,11 @@
           <div class="header_ham__line"></div>
       </div>
   </header>
-    <main>
+    <main data-barba="container" data-barba-namespace="page-a">
         <section class="sect banner_sect banner_sect--big">
+          <svg class="banner_wave" viewBox="0 0 1400 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 21.9999H0C538.755 -7.45819 845.382 -7.10962 1400 21.9999Z" fill="#FFFFFF"/>
+            </svg>
             <div class="sect_text">
               <h1>Enjoy unlimited <span class="highlight_text">Growth without worries</span></h1>
               <p>
@@ -47,6 +53,16 @@
                 which enables better sales by providing digital solutions to meet the
                 beeds of your business
               </p>
+              <div class="buttons">
+                <button class="button">Learn more</button>
+                <a href="/contact.html"><svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="1">
+                  <path d="M17.6418 1.4254C17.1835 0.944662 16.5051 0.766852 15.8726 0.95501L1.12346 5.32874C0.45613 5.51878 -0.0168699 6.06162 -0.144287 6.75027C-0.274453 7.4521 0.180213 8.34397 0.774213 8.71652L5.38596 11.6066C5.85896 11.9039 6.46946 11.8296 6.86088 11.4269L12.1418 6.00705C12.4076 5.72387 12.8476 5.72387 13.1135 6.00705C13.3793 6.27894 13.3793 6.72205 13.1135 7.00429L7.82338 12.4242C7.43105 12.8268 7.35771 13.4515 7.64646 13.9379L10.4643 18.6889C10.7943 19.2524 11.3626 19.5732 11.986 19.5732C12.0593 19.5732 12.1418 19.5732 12.2151 19.5629C12.9301 19.4697 13.4985 18.9702 13.7093 18.2646L18.0818 3.24113C18.2743 2.60139 18.1001 1.90521 17.6418 1.4254Z" fill="white"/>
+                  <path d="M6.6638 17.0085C6.93147 17.2842 6.93147 17.7311 6.6638 18.0067L5.41163 19.2909C5.2778 19.4292 5.1018 19.4979 4.9258 19.4979C4.7498 19.4979 4.5738 19.4292 4.43996 19.2909C4.17138 19.0153 4.17138 18.5693 4.43996 18.2937L5.69121 17.0085C5.9598 16.7338 6.39522 16.7338 6.6638 17.0085ZM5.94541 13.4448C6.21307 13.7205 6.21307 14.1674 5.94541 14.443L4.69324 15.7272C4.55941 15.8655 4.38341 15.9342 4.20741 15.9342C4.03141 15.9342 3.85541 15.8655 3.72157 15.7272C3.45299 15.4515 3.45299 15.0056 3.72157 14.73L4.97282 13.4448C5.24141 13.1701 5.67682 13.1701 5.94541 13.4448ZM2.49764 12.323C2.76531 12.5987 2.76531 13.0456 2.49764 13.3212L1.24547 14.6054C1.11164 14.7437 0.935639 14.8124 0.759639 14.8124C0.583639 14.8124 0.407638 14.7437 0.273805 14.6054C0.00522169 14.3297 0.00522169 13.8838 0.273805 13.6082L1.52506 12.323C1.79364 12.0483 2.22906 12.0483 2.49764 12.323Z" fill="white"/>
+                  </g>
+                  </svg>
+                   Contact Us</a>
+              </div>
             </div>
             <div class="sect_img"></div>
           </section>
@@ -322,21 +338,222 @@
           </section>
           
           <!-- End of Team Members-->
-      <section class="sect contact_sect">
-                  <div class="sect_text">
-                      <p class="sect_text--small">
-                          <b>Got a project?</b>
-                      </p>
-                      <h3>
-                          We are here to help! <br/>Get in Touch with Us
-                      </h3>
-                      <button class="button">Contact Us</button>
+          <section class="sect features_sect">
+            <h3>We are constantly evolving with 
+              the growing world</h3>
+              <div class="features">
+                <div class="features__texts">
+                  
+                  <div class="features__text">
+                    <!-- <div class="features__icon"></div> -->
+                    <h4>
+                      Transparent & Reliable
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies in placerat id </p>
                   </div>
-                  <div class="parallax sect_image">
-                      <img src="./assets/images/email.svg" alt="">
+                  <div class="features__text">
+                    <!-- <div class="features__icon"></div> -->
+                    <h4>
+                      Innovative Ideas
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies in placerat id </p>
                   </div>
-              </section>
+                  <div class="features__text">
+                    <!-- <div class="features__icon"></div> -->
+                    <h4>
+                      High Quality Service
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies in placerat id </p>
+                  </div>
+                  <div class="features__text">
+                    <!-- <div class="features__icon"></div> -->
+                    <h4>
+                      24/7 Full Dedicated Support
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies in placerat id </p>
+                  </div>
+                  <div class="features__text">
+                    <!-- <div class="features__icon"></div> -->
+                    <h4>
+                      Industry Professionals
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies in placerat id </p>
+                  </div>
+                  <div class="logo_cont">
+                    <div class="logo">
+                      <img src="./assets/images/ASTRO LOGO Solo.svg" alt="">
+                    </div>
+                    <div class="features__icons">
+                      <div class="features__icon"><svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.9313 3.93299C22.8646 4.34965 22.8313 4.76632 22.8313 5.18299C22.8313 8.93299 25.8646 11.9647 29.598 11.9647C30.0146 11.9647 30.4146 11.9163 30.8313 11.8497V25.298C30.8313 30.9497 27.498 34.2997 21.8313 34.2997H9.51631C3.84798 34.2997 0.514648 30.9497 0.514648 25.298V12.9663C0.514648 7.29965 3.84798 3.93299 9.51631 3.93299H22.9313ZM23.2663 14.0663C22.8146 14.0163 22.3663 14.2163 22.098 14.583L18.0663 19.7997L13.448 16.1663C13.1646 15.9497 12.8313 15.8647 12.498 15.8997C12.1663 15.9497 11.8663 16.1313 11.6646 16.398L6.73298 22.8163L6.63131 22.9663C6.34798 23.498 6.48131 24.1813 6.98131 24.5497C7.21465 24.6997 7.46465 24.7997 7.74798 24.7997C8.13298 24.8163 8.49798 24.6147 8.73131 24.2997L12.9146 18.9147L17.6646 22.483L17.8146 22.5813C18.348 22.8647 19.0146 22.733 19.398 22.2313L24.2146 16.0163L24.148 16.0497C24.4146 15.683 24.4646 15.2163 24.2813 14.7997C24.0996 14.383 23.698 14.0997 23.2663 14.0663ZM29.8315 0.96582C32.0481 0.96582 33.8481 2.76582 33.8481 4.98249C33.8481 7.19915 32.0481 8.99915 29.8315 8.99915C27.6148 8.99915 25.8148 7.19915 25.8148 4.98249C25.8148 2.76582 27.6148 0.96582 29.8315 0.96582Z" fill="#FE4C1C"/>
+                        </svg>
+                        </div>
+                      <div class="features__icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M31.6667 17.5003L35.8333 25.0003L31.6667 25.8337V30.8337H29.1667L24.1667 30.0003L23.3333 35.8337H10.8333L9.16667 27.1828C6.60064 24.7527 5 21.3134 5 17.5003C5 10.1365 10.9695 4.16699 18.3333 4.16699C25.6972 4.16699 31.6667 10.1365 31.6667 17.5003Z" fill="#00C3FF" fill-opacity="0.8" stroke="#00C3FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                          <g clip-path="url(#clip0_69_1278)">
+                          <path d="M21.1091 9.32038L20.3306 11.7371L21.1515 12.0015L21.93 9.58479L21.109 9.32035L21.1091 9.32038V9.32038ZM17.5233 8.96694L16.6991 9.22118L17.4475 11.6467L18.2713 11.3924L17.5233 8.96694ZM25.0477 11.3907L23.0247 12.9235L23.5453 13.611L25.5687 12.0782L25.0478 11.3907L25.0477 11.3907V11.3907ZM20.5279 12.5304C18.5198 11.8836 16.4992 12.5786 16.0146 14.0831L16.0652 21.0046L19.2058 22.0163L23.2866 16.4255C23.7712 14.9211 22.5363 13.1774 20.5281 12.5305L20.5279 12.5304V12.5304ZM13.7644 11.1523L13.2353 11.8338L15.2389 13.3913L15.7689 12.7105L13.7643 11.1523L13.7644 11.1523V11.1523ZM26.8244 15.3592L24.2871 15.4545L24.3192 16.3164L26.8563 16.2214L26.8244 15.3592V15.3592ZM14.7891 15.3767L12.2535 15.2509L12.21 16.1115L14.7453 16.2382L14.7891 15.3767L14.7891 15.3767V15.3767ZM23.5267 18.1913L23.0596 18.9163L25.1921 20.2931L25.659 19.5689L23.5267 18.1912L23.5267 18.1913V18.1913ZM15.8725 21.4459L15.5222 22.5334L18.7545 23.5745L19.1047 22.4872L15.8724 21.4461L15.8725 21.4459ZM15.348 23.0739L14.9978 24.1614L18.23 25.2026L18.5803 24.1153L15.348 23.0741L15.348 23.0739Z" fill="white"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_69_1278">
+                          <rect width="16" height="16" fill="white" transform="translate(13.9053 7) rotate(17.8546)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                          
+                      </div>
+                      <div class="features__icon">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M33.5097 18.4385C33.6297 18.506 33.6537 18.6491 33.6585 18.7037L33.6597 18.7254L33.5263 27.333C33.5263 30.7665 30.866 33.5664 27.5161 33.7381L27.1898 33.7464H7.11314C3.72082 33.7464 0.954462 31.0538 0.784878 27.6632L0.776639 27.333L0.659914 18.7254C0.659914 18.7254 0.659914 18.5229 0.809989 18.4385C0.943389 18.3541 1.11014 18.4554 1.12681 18.4722C4.49516 20.7338 8.54719 22.2359 12.7993 22.8604C13.3996 22.9448 13.9999 22.5566 14.1667 21.949C14.5106 20.6516 15.5726 19.7694 16.8719 19.6642L17.1348 19.6537H17.1848C18.6022 19.6537 19.7861 20.5651 20.153 21.949C20.3197 22.5566 20.92 22.9448 21.5203 22.8604C25.7725 22.2359 29.8245 20.7338 33.1928 18.4722C33.1928 18.4722 33.2262 18.4554 33.2595 18.4385C33.3262 18.4047 33.4263 18.3878 33.5097 18.4385ZM17.1515 22.0672C16.5248 22.0672 15.9962 22.5493 15.9124 23.1627L15.9009 23.333V25.5102C15.9009 26.219 16.4678 26.776 17.1515 26.776C17.7935 26.776 18.3094 26.308 18.3909 25.684L18.4021 25.5102V23.333C18.4021 22.641 17.8518 22.0672 17.1515 22.0672ZM19.3026 0.413086C21.8038 0.413086 23.8548 2.32025 24.1717 4.76749H27.4733C30.9751 4.76749 33.8265 7.65356 33.8265 11.1978C33.8265 11.1978 33.7264 12.6983 33.6931 14.7877C33.6898 14.9531 33.6097 15.1151 33.478 15.213C32.6759 15.8054 31.9422 16.2949 31.8755 16.3286C29.1075 18.1851 25.8909 19.4915 22.4642 20.1413C22.2407 20.1851 22.0206 20.0687 21.9072 19.8695C20.9467 18.2054 19.1525 17.1219 17.1515 17.1219C15.1638 17.1219 13.3529 18.1936 12.3641 19.8594C12.249 20.0552 12.0323 20.1683 11.8105 20.1261C8.41212 19.4746 5.19552 18.17 2.44414 16.3455L0.843339 15.2316C0.709939 15.1472 0.626564 14.9953 0.626564 14.8265C0.576539 13.9658 0.493164 11.1978 0.493164 11.1978C0.493164 7.65356 3.34459 4.76749 6.84634 4.76749H10.1313C10.4481 2.32025 12.4992 0.413086 15.0004 0.413086H19.3026ZM19.3026 2.94472H15.0004C13.8832 2.94472 12.9327 3.72109 12.6659 4.76749H21.6371C21.3703 3.72109 20.4198 2.94472 19.3026 2.94472Z" fill="#FE4C1C"/>
+                          </svg>
+                          
+                      </div>
+                      <div class="features__icon">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.9997 0.333008C7.80967 0.333008 0.333008 7.80967 0.333008 16.9997V23.9047C0.333008 25.6113 1.82801 26.9997 3.66634 26.9997H5.33301C5.77504 26.9997 6.19896 26.8241 6.51152 26.5115C6.82408 26.199 6.99967 25.775 6.99967 25.333V16.7613C6.99967 16.3193 6.82408 15.8954 6.51152 15.5828C6.19896 15.2703 5.77504 15.0947 5.33301 15.0947H3.81967C4.74634 8.64468 10.2963 3.66634 16.9997 3.66634C23.703 3.66634 29.253 8.64468 30.1797 15.0947H28.6663C28.2243 15.0947 27.8004 15.2703 27.4878 15.5828C27.1753 15.8954 26.9997 16.3193 26.9997 16.7613V26.9997C26.9997 28.838 25.5047 30.333 23.6663 30.333H20.333V28.6663H13.6663V33.6663H23.6663C27.343 33.6663 30.333 30.6763 30.333 26.9997C32.1713 26.9997 33.6663 25.6113 33.6663 23.9047V16.9997C33.6663 7.80967 26.1897 0.333008 16.9997 0.333008Z" fill="#00C3FF"/>
+                          </svg>
+                          
+                      </div>
+                      <div class="features__icon">
+                        <svg width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M18.9154 18.233C24.634 18.233 29.5169 19.1396 29.5169 22.7676C29.5169 26.394 24.6653 27.3337 18.9154 27.3337C13.1967 27.3337 8.31381 26.427 8.31381 22.8006C8.31381 19.1727 13.1654 18.233 18.9154 18.233ZM28.0588 16.0485C30.2451 16.0079 32.5955 16.3081 33.464 16.5213C35.3041 16.883 36.5144 17.6215 37.0158 18.6947C37.4396 19.5758 37.4396 20.598 37.0158 21.4776C36.2487 23.1422 33.7759 23.6766 32.8149 23.8147C32.6164 23.8447 32.4567 23.6721 32.4776 23.4725C32.9686 18.8598 29.0631 16.6729 28.0528 16.17C28.0095 16.1475 28.0006 16.113 28.0051 16.092C28.008 16.077 28.0259 16.053 28.0588 16.0485ZM9.5313 16.0453L9.94299 16.0491C9.97582 16.0536 9.99224 16.0776 9.99522 16.0911C9.9997 16.1136 9.99074 16.1466 9.94896 16.1706C8.93715 16.6735 5.03171 18.8604 5.52269 23.4716C5.54358 23.6727 5.38539 23.8438 5.18691 23.8153C4.22584 23.6772 1.75304 23.1428 0.985979 21.4782C0.560663 20.5971 0.560663 19.5764 0.985979 18.6953C1.4874 17.6221 2.6962 16.8836 4.53625 16.5204C5.40628 16.3087 7.75522 16.0085 9.94299 16.0491L9.5313 16.0453ZM18.9154 0.666992C22.8089 0.666992 25.9309 3.80411 25.9309 7.72175C25.9309 11.6379 22.8089 14.778 18.9154 14.778C15.0219 14.778 11.8999 11.6379 11.8999 7.72175C11.8999 3.80411 15.0219 0.666992 18.9154 0.666992ZM28.4393 1.84348C32.2 1.84348 35.1534 5.40238 34.1475 9.36655C33.4685 12.0353 31.0106 13.808 28.2722 13.736C27.9976 13.7285 27.7275 13.703 27.4663 13.6579C27.2768 13.6249 27.1813 13.4103 27.2887 13.2512C28.3334 11.7051 28.9288 9.84538 28.9288 7.84903C28.9288 5.76563 28.2782 3.82332 27.1485 2.23075C27.1126 2.18121 27.0858 2.10466 27.1216 2.04762C27.1514 2.00109 27.2067 1.97707 27.2589 1.96507C27.6394 1.88701 28.0304 1.84348 28.4393 1.84348ZM9.56021 1.84333C9.96911 1.84333 10.3601 1.88686 10.7421 1.96492C10.7929 1.97692 10.8496 2.00244 10.8794 2.04747C10.9138 2.10451 10.8884 2.18106 10.8526 2.2306C9.72287 3.82317 9.07221 5.76548 9.07221 7.84888C9.07221 9.84522 9.66765 11.705 10.7123 13.251C10.8197 13.4101 10.7242 13.6248 10.5347 13.6578C10.2721 13.7043 10.0034 13.7283 9.72884 13.7358C6.9904 13.8079 4.53252 12.0352 3.85351 9.3664C2.84618 5.40223 5.79951 1.84333 9.56021 1.84333Z" fill="#0270E8"/>
+                          </svg>
+                          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+              
+              
+              
+              
+          </section>
+
+          <section class="testimonial-section">
+            <div class="team-header">
+                <div>
+    
+                    <div class="team-section-header testimonial-header">
+                        <div class="carousel">
+                        </div>
+                        
+                        <h4 class="testimonial-text">Testimonial</h4>
+                        <div class="carousel">
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    <h2>What our customers say about us</h2>
+                </div>
+                    <div class="team-icons-container">
+    
+                <div class=" team-icon team-prev-icon">
+                    <span id="prev-arrow"><i class="fa fa-chevron-left slider-icon" aria-hidden="true"></i></span>
+                </div> 
+                <div class=" team-icon team-next-icon">
+                    <span id="next-arrow"><i class="fa fa-chevron-right slider-icon" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
+        <!--Clients Section-->
+        <article class="clients-section-container">
+            <div class="clients-section">
+                
+            
+        <h2>"</h2>
+        <p class="client-comment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe qui quod esse rerum similique nobis?</p>
+        <div class="client-container">
+    <div class="client-image">
+        <img src="./assets/images/client-1.png" alt="" id="client-pic">
+    </div>
+    <div>
+        <h5 id="client-name">John Peter</h5>
+        <p class="client-company">CEO, Card Center</p>
+    
+    </div>
+        </div>
+    </div>
+        </article>
+        <!--End of single client-->
+          </section>
+          <section class="accordion-section">
+            <div class="wrapper">
+                <div class="faq-heading">
+                    <div class="dot-icon">
+                        <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABo0lEQVRIidWVsUpjQRSGv2NQNleLzVhFFy6bNMLtvKlcfIYkiNj7CC7sgm+w2myhbyHu1XbXxpRmBItoYyIGiZXJNpuIgmebRBJv8Bq9jX835wzfNzDMGXjvkeeanudN3DrTRVXNA/PAp27rCjhWkcBp3wSVSuVuZEEmt7iksCGQiThkFZFvtaPD3WHNRKiyvJzITppNkJ8CqQg4gAFWTNqdal3XDwB9VpCdNJuq8vUF4MEIC6kZN9lq1P8MlvuSyS0uATsjw/uBSrFqS0FI4HneRCdpToHsWwTARbLTnOtd/FiveutMF2OAA3xuf0jle4tHgaoWYoADIEhYgOLHJUDIhQVCOjYBzIYF8eZhmKARH18fWf0CG59AyiGBigTDN48ehb2QwDz8+wWcxwCvOZ3mfkhgrb1H5PtbBQlY6x/fA8Ou1bg8M2l3CmHhVXSRH9VyafuJcDCt6/rBxxnXEfgyIn6jVi6tEzWuAf3bqP82afek+yJNBPh8DFar5dLWUzhEfJm+7483SRYEySPqg3S/TL1CxaoQGG3vWWvvIw7xjvMfzw9+w7UGLXoAAAAASUVORK5CYII="></span>
+                        <span>Why Choose us</span>
+                        <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABo0lEQVRIidWVsUpjQRSGv2NQNleLzVhFFy6bNMLtvKlcfIYkiNj7CC7sgm+w2myhbyHu1XbXxpRmBItoYyIGiZXJNpuIgmebRBJv8Bq9jX835wzfNzDMGXjvkeeanudN3DrTRVXNA/PAp27rCjhWkcBp3wSVSuVuZEEmt7iksCGQiThkFZFvtaPD3WHNRKiyvJzITppNkJ8CqQg4gAFWTNqdal3XDwB9VpCdNJuq8vUF4MEIC6kZN9lq1P8MlvuSyS0uATsjw/uBSrFqS0FI4HneRCdpToHsWwTARbLTnOtd/FiveutMF2OAA3xuf0jle4tHgaoWYoADIEhYgOLHJUDIhQVCOjYBzIYF8eZhmKARH18fWf0CG59AyiGBigTDN48ehb2QwDz8+wWcxwCvOZ3mfkhgrb1H5PtbBQlY6x/fA8Ou1bg8M2l3CmHhVXSRH9VyafuJcDCt6/rBxxnXEfgyIn6jVi6tEzWuAf3bqP82afek+yJNBPh8DFar5dLWUzhEfJm+7483SRYEySPqg3S/TL1CxaoQGG3vWWvvIw7xjvMfzw9+w7UGLXoAAAAASUVORK5CYII="></span>
+                    </div>
+                    <h2>FAQ</h2>
+                </div>
+                <div class="parent-box" id="dropone">
+                    <div class="child-box child-top">
+                        <h3>How can i get started?</h3>
+                        <span id="span"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAESUlEQVRoge2aT2gcVRzHP7/ZNbZqLT0Yg4JU0VhjemiNVLL/bFZaSiso/rlY20MPOXjwqgX1IlUQFISiiBcJeijNoUgrojFsNknVRqE0SqKI+I/qFmlk0yaY3fl52Ex3Nvt33ptkK/o5vX3zfr/3/e6bN2/mzcD/XF1IqNlGdTNREkAP0A1sAm5cPjqPMAd8B8wC48RlNqyu7Y2MaQ/CAeAJ4I6A0b8BwwhDxGXKRoa5kTFNAYcRdtkIuIJyGuEIcU4iokHDgxuZ1Fsp8grwdODYVhDGEJ4hJtPBwoIwrgdRjgLXB4oLzt/AYeK83urotGZkSq9hgbeAQxbigiOc4BJPsVsuNW/ajCm9jkWOoewNRVxwPqeDfeyQPxs1amykNBIngD1hKjNgCmGAuOTrNXAahi/wLu03AdCHy3GOaaReg/pGxnUQOLAaqowQdnELL9Y/XIusdgNngXXWAlxiRHBQsta5wEVJkpSJlQfqGTlFWKdUQmQ5Z+BFrg7TrGc7fbLkr6w+tbL6MFfHvKhHL4vVy0CtOfLcGoixQ3meb7TDX1VpZExjQP9aajLkNi7yqL+i0ohwcE3l2FFxr1c2UrpGP77WaoxRdpPVTd7PspEu7qP0IPRvIYqS8n6UjTgk2yLHBuFBr+ifI/e2QYotPV6hbETpbosUO+72Cv4RubkNQmzp9Ap+Ize0QYgt67yF0X9qRdsmx4aFku6yEWG+bWLMKdAnl6Hy1LrYJjE2zHkF/4j8YJRKiSPcD+QMonNAH0LCqG/Kmv0jYrZ9KSwSlykc0gQzk8MhTUK+AhaN+lZmvKJ/sp82SgYfkdGtxGSaCCngfAsxF3B5iJhMM6lbUD406lmY9Ir+UysDLNVq34SbcBgho1vplxkiDNDYzAVc0qTkHJO6hSKjQJdBv+AwUi56xCWPMmqUsHUz4ZmAb4lJzTkCMGSYFJqbCdMEKO/5f1YaiTIM/GGcvGTmUya0l36ZwfHt1DsMkJJzTGgvRTLYmIAFOhoZ6ZcF4A2LDgA6cfnsygXAw5vYLp/gu0cy5B0ekIo/vHrzocBR4BfLjsoj4xHOSIDwFwVera6uxZg+hnDcqsMSOWR581s5if1IADxLQt5cWVl/E3tch1D2h9BxmGQ4T5onpbjyQCMjG1DO4Ht4aTO/o2wnKTXXqPqb2HHJ47KH1lbq1SaPsreeCWj2WiElP1LaPjW5IQyLeVweISlfN2rU2qu3jN6Fw8fA7WEoC0AOh33E5Eyzho1HxCMl37PINoRha2mt8yUFdrRiAoK+1VUVJhhEOcLqbeZdRniZJV5jpxRaDTL7YGBCOynyAsIhYL1RjmoKKO8T4SVi8lPQYLtPOEa1iyiDKPsR7jTM8ivwAS5vL19cjAjnoxpVIcs2II2QBO4BNgMrX14q8DPKLEIWhxH6+QIR11ZCuF8H+Tml17KRjcAGCji45IE5dorZY+1/hX8AB3g0zHrHmrAAAAAASUVORK5CYII="></span>
+                    </div>
+                    <div class="child-box child-bottom" id="childBottomOne">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, dignissimos?</p>
+                    </div>
+                </div>
+                <div class="parent-box-one" id="drop-two">
+                    <div class="child-box-one">
+                        <h3>Duration for a project</h3>
+                        <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAESUlEQVRoge2aT2gcVRzHP7/ZNbZqLT0Yg4JU0VhjemiNVLL/bFZaSiso/rlY20MPOXjwqgX1IlUQFISiiBcJeijNoUgrojFsNknVRqE0SqKI+I/qFmlk0yaY3fl52Ex3Nvt33ptkK/o5vX3zfr/3/e6bN2/mzcD/XF1IqNlGdTNREkAP0A1sAm5cPjqPMAd8B8wC48RlNqyu7Y2MaQ/CAeAJ4I6A0b8BwwhDxGXKRoa5kTFNAYcRdtkIuIJyGuEIcU4iokHDgxuZ1Fsp8grwdODYVhDGEJ4hJtPBwoIwrgdRjgLXB4oLzt/AYeK83urotGZkSq9hgbeAQxbigiOc4BJPsVsuNW/ajCm9jkWOoewNRVxwPqeDfeyQPxs1amykNBIngD1hKjNgCmGAuOTrNXAahi/wLu03AdCHy3GOaaReg/pGxnUQOLAaqowQdnELL9Y/XIusdgNngXXWAlxiRHBQsta5wEVJkpSJlQfqGTlFWKdUQmQ5Z+BFrg7TrGc7fbLkr6w+tbL6MFfHvKhHL4vVy0CtOfLcGoixQ3meb7TDX1VpZExjQP9aajLkNi7yqL+i0ohwcE3l2FFxr1c2UrpGP77WaoxRdpPVTd7PspEu7qP0IPRvIYqS8n6UjTgk2yLHBuFBr+ifI/e2QYotPV6hbETpbosUO+72Cv4RubkNQmzp9Ap+Ize0QYgt67yF0X9qRdsmx4aFku6yEWG+bWLMKdAnl6Hy1LrYJjE2zHkF/4j8YJRKiSPcD+QMonNAH0LCqG/Kmv0jYrZ9KSwSlykc0gQzk8MhTUK+AhaN+lZmvKJ/sp82SgYfkdGtxGSaCCngfAsxF3B5iJhMM6lbUD406lmY9Ir+UysDLNVq34SbcBgho1vplxkiDNDYzAVc0qTkHJO6hSKjQJdBv+AwUi56xCWPMmqUsHUz4ZmAb4lJzTkCMGSYFJqbCdMEKO/5f1YaiTIM/GGcvGTmUya0l36ZwfHt1DsMkJJzTGgvRTLYmIAFOhoZ6ZcF4A2LDgA6cfnsygXAw5vYLp/gu0cy5B0ekIo/vHrzocBR4BfLjsoj4xHOSIDwFwVera6uxZg+hnDcqsMSOWR581s5if1IADxLQt5cWVl/E3tch1D2h9BxmGQ4T5onpbjyQCMjG1DO4Ht4aTO/o2wnKTXXqPqb2HHJ47KH1lbq1SaPsreeCWj2WiElP1LaPjW5IQyLeVweISlfN2rU2qu3jN6Fw8fA7WEoC0AOh33E5Eyzho1HxCMl37PINoRha2mt8yUFdrRiAoK+1VUVJhhEOcLqbeZdRniZJV5jpxRaDTL7YGBCOynyAsIhYL1RjmoKKO8T4SVi8lPQYLtPOEa1iyiDKPsR7jTM8ivwAS5vL19cjAjnoxpVIcs2II2QBO4BNgMrX14q8DPKLEIWhxH6+QIR11ZCuF8H+Tml17KRjcAGCji45IE5dorZY+1/hX8AB3g0zHrHmrAAAAAASUVORK5CYII="></span>
+                    </div>
+                    <div class="child-box-bottom-one" id="child-Bottom-two">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum dictum nec orci magna urna. Non facilisis tincidunt id pulvinar odio.
+                        </p>
+                    </div>
+                </div>
+                <div class="parent-box-two" id="drop-three">
+                    <div class="child-box-two">
+                        <h3>Cost of a project?</h3>
+                        <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAESUlEQVRoge2aT2gcVRzHP7/ZNbZqLT0Yg4JU0VhjemiNVLL/bFZaSiso/rlY20MPOXjwqgX1IlUQFISiiBcJeijNoUgrojFsNknVRqE0SqKI+I/qFmlk0yaY3fl52Ex3Nvt33ptkK/o5vX3zfr/3/e6bN2/mzcD/XF1IqNlGdTNREkAP0A1sAm5cPjqPMAd8B8wC48RlNqyu7Y2MaQ/CAeAJ4I6A0b8BwwhDxGXKRoa5kTFNAYcRdtkIuIJyGuEIcU4iokHDgxuZ1Fsp8grwdODYVhDGEJ4hJtPBwoIwrgdRjgLXB4oLzt/AYeK83urotGZkSq9hgbeAQxbigiOc4BJPsVsuNW/ajCm9jkWOoewNRVxwPqeDfeyQPxs1amykNBIngD1hKjNgCmGAuOTrNXAahi/wLu03AdCHy3GOaaReg/pGxnUQOLAaqowQdnELL9Y/XIusdgNngXXWAlxiRHBQsta5wEVJkpSJlQfqGTlFWKdUQmQ5Z+BFrg7TrGc7fbLkr6w+tbL6MFfHvKhHL4vVy0CtOfLcGoixQ3meb7TDX1VpZExjQP9aajLkNi7yqL+i0ohwcE3l2FFxr1c2UrpGP77WaoxRdpPVTd7PspEu7qP0IPRvIYqS8n6UjTgk2yLHBuFBr+ifI/e2QYotPV6hbETpbosUO+72Cv4RubkNQmzp9Ap+Ize0QYgt67yF0X9qRdsmx4aFku6yEWG+bWLMKdAnl6Hy1LrYJjE2zHkF/4j8YJRKiSPcD+QMonNAH0LCqG/Kmv0jYrZ9KSwSlykc0gQzk8MhTUK+AhaN+lZmvKJ/sp82SgYfkdGtxGSaCCngfAsxF3B5iJhMM6lbUD406lmY9Ir+UysDLNVq34SbcBgho1vplxkiDNDYzAVc0qTkHJO6hSKjQJdBv+AwUi56xCWPMmqUsHUz4ZmAb4lJzTkCMGSYFJqbCdMEKO/5f1YaiTIM/GGcvGTmUya0l36ZwfHt1DsMkJJzTGgvRTLYmIAFOhoZ6ZcF4A2LDgA6cfnsygXAw5vYLp/gu0cy5B0ekIo/vHrzocBR4BfLjsoj4xHOSIDwFwVera6uxZg+hnDcqsMSOWR581s5if1IADxLQt5cWVl/E3tch1D2h9BxmGQ4T5onpbjyQCMjG1DO4Ht4aTO/o2wnKTXXqPqb2HHJ47KH1lbq1SaPsreeCWj2WiElP1LaPjW5IQyLeVweISlfN2rU2qu3jN6Fw8fA7WEoC0AOh33E5Eyzho1HxCMl37PINoRha2mt8yUFdrRiAoK+1VUVJhhEOcLqbeZdRniZJV5jpxRaDTL7YGBCOynyAsIhYL1RjmoKKO8T4SVi8lPQYLtPOEa1iyiDKPsR7jTM8ivwAS5vL19cjAjnoxpVIcs2II2QBO4BNgMrX14q8DPKLEIWhxH6+QIR11ZCuF8H+Tml17KRjcAGCji45IE5dorZY+1/hX8AB3g0zHrHmrAAAAAASUVORK5CYII="></span>
+                    </div>
+                    <div class="child-box-bottom-two" id="child-Bottom-three">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, error? Totam qui officia delectus natus facere ipsam amet? Neque vel distinctio maxime reiciendis quibusdam nam, consequatur amet nulla iusto sapiente.
+                        </p>
+                    </div>
+                </div>
+                <div class="parent-box-three" id="drop-four">
+                    <div class="child-box-three">
+                        <h3>Do i also get support?</h3>
+                        <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAESUlEQVRoge2aT2gcVRzHP7/ZNbZqLT0Yg4JU0VhjemiNVLL/bFZaSiso/rlY20MPOXjwqgX1IlUQFISiiBcJeijNoUgrojFsNknVRqE0SqKI+I/qFmlk0yaY3fl52Ex3Nvt33ptkK/o5vX3zfr/3/e6bN2/mzcD/XF1IqNlGdTNREkAP0A1sAm5cPjqPMAd8B8wC48RlNqyu7Y2MaQ/CAeAJ4I6A0b8BwwhDxGXKRoa5kTFNAYcRdtkIuIJyGuEIcU4iokHDgxuZ1Fsp8grwdODYVhDGEJ4hJtPBwoIwrgdRjgLXB4oLzt/AYeK83urotGZkSq9hgbeAQxbigiOc4BJPsVsuNW/ajCm9jkWOoewNRVxwPqeDfeyQPxs1amykNBIngD1hKjNgCmGAuOTrNXAahi/wLu03AdCHy3GOaaReg/pGxnUQOLAaqowQdnELL9Y/XIusdgNngXXWAlxiRHBQsta5wEVJkpSJlQfqGTlFWKdUQmQ5Z+BFrg7TrGc7fbLkr6w+tbL6MFfHvKhHL4vVy0CtOfLcGoixQ3meb7TDX1VpZExjQP9aajLkNi7yqL+i0ohwcE3l2FFxr1c2UrpGP77WaoxRdpPVTd7PspEu7qP0IPRvIYqS8n6UjTgk2yLHBuFBr+ifI/e2QYotPV6hbETpbosUO+72Cv4RubkNQmzp9Ap+Ize0QYgt67yF0X9qRdsmx4aFku6yEWG+bWLMKdAnl6Hy1LrYJjE2zHkF/4j8YJRKiSPcD+QMonNAH0LCqG/Kmv0jYrZ9KSwSlykc0gQzk8MhTUK+AhaN+lZmvKJ/sp82SgYfkdGtxGSaCCngfAsxF3B5iJhMM6lbUD406lmY9Ir+UysDLNVq34SbcBgho1vplxkiDNDYzAVc0qTkHJO6hSKjQJdBv+AwUi56xCWPMmqUsHUz4ZmAb4lJzTkCMGSYFJqbCdMEKO/5f1YaiTIM/GGcvGTmUya0l36ZwfHt1DsMkJJzTGgvRTLYmIAFOhoZ6ZcF4A2LDgA6cfnsygXAw5vYLp/gu0cy5B0ekIo/vHrzocBR4BfLjsoj4xHOSIDwFwVera6uxZg+hnDcqsMSOWR581s5if1IADxLQt5cWVl/E3tch1D2h9BxmGQ4T5onpbjyQCMjG1DO4Ht4aTO/o2wnKTXXqPqb2HHJ47KH1lbq1SaPsreeCWj2WiElP1LaPjW5IQyLeVweISlfN2rU2qu3jN6Fw8fA7WEoC0AOh33E5Eyzho1HxCMl37PINoRha2mt8yUFdrRiAoK+1VUVJhhEOcLqbeZdRniZJV5jpxRaDTL7YGBCOynyAsIhYL1RjmoKKO8T4SVi8lPQYLtPOEa1iyiDKPsR7jTM8ivwAS5vL19cjAjnoxpVIcs2II2QBO4BNgMrX14q8DPKLEIWhxH6+QIR11ZCuF8H+Tml17KRjcAGCji45IE5dorZY+1/hX8AB3g0zHrHmrAAAAAASUVORK5CYII="></span>
+                    </div>
+                    <div class="child-box-bottom-three" id="child-bottom-four">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi architecto commodi ea assumenda. Optio veritatis officiis illo alias corrupti consequatur rerum at molestiae, mollitia doloribus ex eveniet sit similique quidem?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="faq_img" src="./assets/images/pana.png" alt="">
+            </div>
+
+        </section>
     </main>
+    <section class="sect contact_sect">
+      <div class="sect_text">
+          <p class="sect_text--small">
+              <b>Got a project?</b>
+          </p>
+          <h3>
+              We are here to help! <br/>Get in Touch with Us
+          </h3>
+          <button class="button">Contact Us</button>
+      </div>
+      <div class="parallax sect_image">
+          <img src="./assets/images/email.svg" alt="">
+      </div>
+  </section>
+
+   
      <footer class="footer">
       
         <article class="contact-details-header">
@@ -383,11 +600,7 @@
     </div>
     </div>
     <!--End of Single Contact Means-->
-    <div class="rocket-container">
-      <div><img src="./assets/images/noto_rocket.png" alt="" class="rocket"></div>
-      <div class="navigation-icon-container">
-        <a href="#main"><img src="./assets/images/navigation-icon.png" alt="" class="navigation-icon"></a></div>
-    </div>
+    
   </article>
   
   <div class="nav-links-container footer-links">
@@ -412,26 +625,75 @@
     <p class="copyright">Copyright @ Astrosoft Dev <script type="text/javascript">
         document.write("2021 - "+ new Date().getFullYear());
         </script>. All Rights Reserved.</p>
-    <article class="banner-icons footer-icons">
-      <span>
-        <a href=""><i class="fa-brands fa-twitter twitter"></i></a>
-        
-      </span>
-  
-      <span>
-        <a href=""><i class="fa-brands fa-linkedin-in linkedin"></i></a></span>
-      <span class="facebook-container">
-        <a href="">
-  
-          <i class="fa-brands fa-facebook-f facebook"></i
-        ></span>
-        </a>
-      <span>
-        <a href=""><i class="fa-brands fa-instagram instagram"></i></a>
-      </span>
-    </article>
+        <div class="socials">
+                   
+          <a href="#">
+              <span class="fab fa-twitter">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_69_3443)">
+                      <path d="M17.945 5.9275C18.7583 5.35 19.4425 4.62917 20 3.79917V3.79833C19.2558 4.12417 18.4642 4.34083 17.6375 4.44583C18.4875 3.93833 19.1367 3.14083 19.4417 2.18C18.6492 2.6525 17.7742 2.98583 16.8417 3.1725C16.0892 2.37083 15.0167 1.875 13.8467 1.875C11.5767 1.875 9.74917 3.7175 9.74917 5.97583C9.74917 6.30083 9.77667 6.61333 9.84417 6.91083C6.43583 6.74417 3.41917 5.11083 1.3925 2.62167C1.03917 3.23583 0.830833 3.93833 0.830833 4.69417C0.830833 6.11417 1.56167 7.3725 2.6525 8.10167C1.99333 8.08917 1.3475 7.8975 0.8 7.59667V7.64167C0.8 9.63417 2.22083 11.2892 4.085 11.6708C3.75083 11.7625 3.3875 11.8058 3.01 11.8058C2.7475 11.8058 2.4825 11.7908 2.23417 11.7358C2.765 13.3592 4.27333 14.5533 6.065 14.5925C4.67 15.6833 2.89833 16.3408 0.980833 16.3408C0.645 16.3408 0.3225 16.3258 0 16.285C1.81667 17.4558 3.96833 18.125 6.29 18.125C13.5258 18.125 18.2417 12.0883 17.945 5.9275Z" fill="currentColor"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_69_3443">
+                      <rect width="20" height="20" fill="red"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                      
+              </span>
+          </a>
+          <a href="#">
+              <span class="fab fa-linkedin">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_69_3439)">
+                      <path d="M19.9951 19.9999V19.999H20.0001V12.664C20.0001 9.07569 19.2276 6.31152 15.0326 6.31152C13.0159 6.31152 11.6626 7.41819 11.1101 8.46736H11.0517V6.64652H7.07422V19.999H11.2159V13.3874C11.2159 11.6465 11.5459 9.96319 13.7017 9.96319C15.8259 9.96319 15.8576 11.9499 15.8576 13.499V19.9999H19.9951Z" fill="currentColor"/>
+                      <path d="M0.330078 6.64795H4.47675V20.0004H0.330078V6.64795Z" fill="currentColor"/>
+                      <path d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0V0Z" fill="currentColor"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_69_3439">
+                      <rect width="20" height="20" fill="currentColor"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+              </span>
+          </a>
+          <a href="#">
+              <span class="fab fa-facebook-f">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.0558C0 15.0275 3.61083 19.1617 8.33333 20V12.7775H5.83333V10H8.33333V7.7775C8.33333 5.2775 9.94417 3.88917 12.2225 3.88917C12.9442 3.88917 13.7225 4 14.4442 4.11083V6.66667H13.1667C11.9442 6.66667 11.6667 7.2775 11.6667 8.05583V10H14.3333L13.8892 12.7775H11.6667V20C16.3892 19.1617 20 15.0283 20 10.0558C20 4.525 15.5 0 10 0C4.5 0 0 4.525 0 10.0558Z" fill="currentColor"/>
+                      </svg>
+                      
+              </span>
+          </a>
+          <a href="#">
+              <span class="fab fa-instagram">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.9999 8.13618C9.42291 8.13618 8.13599 9.4231 8.13599 11C8.13599 12.577 9.42291 13.8639 10.9999 13.8639C12.5768 13.8639 13.8637 12.577 13.8637 11C13.8637 9.4231 12.5768 8.13618 10.9999 8.13618ZM19.5893 11C19.5893 9.81411 19.6001 8.63892 19.5335 7.45513C19.4669 6.08013 19.1532 4.85982 18.1477 3.85435C17.1401 2.84673 15.9219 2.53521 14.5469 2.46861C13.361 2.40201 12.1858 2.41275 11.002 2.41275C9.81607 2.41275 8.64088 2.40201 7.45709 2.46861C6.08209 2.53521 4.86177 2.84888 3.8563 3.85435C2.84869 4.86197 2.53716 6.08013 2.47056 7.45513C2.40396 8.64107 2.4147 9.81626 2.4147 11C2.4147 12.1838 2.40396 13.3612 2.47056 14.545C2.53716 15.92 2.85083 17.1403 3.8563 18.1458C4.86392 19.1534 6.08209 19.4649 7.45709 19.5315C8.64303 19.5981 9.81822 19.5874 11.002 19.5874C12.1879 19.5874 13.3631 19.5981 14.5469 19.5315C15.9219 19.4649 17.1422 19.1512 18.1477 18.1458C19.1553 17.1381 19.4669 15.92 19.5335 14.545C19.6022 13.3612 19.5893 12.186 19.5893 11ZM10.9999 15.4065C8.56138 15.4065 6.59341 13.4385 6.59341 11C6.59341 8.56157 8.56138 6.59361 10.9999 6.59361C13.4383 6.59361 15.4063 8.56157 15.4063 11C15.4063 13.4385 13.4383 15.4065 10.9999 15.4065ZM15.5868 7.44224C15.0174 7.44224 14.5577 6.98247 14.5577 6.41314C14.5577 5.8438 15.0174 5.38404 15.5868 5.38404C16.1561 5.38404 16.6159 5.8438 16.6159 6.41314C16.6161 6.54833 16.5895 6.68223 16.5379 6.80716C16.4862 6.93209 16.4104 7.04561 16.3148 7.1412C16.2192 7.23679 16.1057 7.31259 15.9808 7.36425C15.8559 7.41591 15.722 7.44241 15.5868 7.44224Z" fill="currentColor"/>
+                      </svg>
+                      
+              </span>
+          </a>
+      </div>
+  </div>
+  <div class="rocket-container">
+    <div><img src="./assets/images/noto_rocket.png" alt="" class="rocket"></div>
+    <a href="#main"><img src="./assets/images/navigation-icon.png" alt="" class="navigation-icon"></a>
+    
   </div>
       </footer>
       <script src="./assets/js/header.js"></script>
+      <script src="./assets/js/home.js"></script>
+      <script src="./assets/js/team.js"></script>
+      <script src="./assets/js/text.js"></script>
+       <!-- load barba (UMD version) -->
+    <script src="https://unpkg.com/@barba/core"></script>
+  
+    <!-- load gsap animation library (minified version) -->
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+
+    
+    <script src="./assets/js/transitions.js"></script>
+    
   </body>
 </html>

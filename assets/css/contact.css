@@ -1,13 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
 
-.sidebar {
+body {
+    font-size: 16px;
+}
+
+.nav-container {
     width: 100%;
-    display: none;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1em;
+}
+
+nav ul {
+    width: 40%;
+    display: flex;
+    margin-left: 15em;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+button a {
+    text-decoration: none;
+    color: #0270E8;
 }
 
 .contact-section {
     margin-top: 7.5em;
     margin-left: 7.5em;
     color: #fff;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 h6 {
@@ -48,7 +96,18 @@ main {
     gap: 50px;
 }
 
-.heading span:nth-of-type(1) {
+.get-in-touch {
+    border-bottom: 2px solid #FE4C1C;
+    padding-bottom: 5px;
+    color: #FE4C1C;
+}
+
+.getTouch {
+    color: black;
+    border: none;
+}
+
+.getQuote {
     border-bottom: 2px solid #FE4C1C;
     padding-bottom: 5px;
     color: #FE4C1C;
@@ -72,64 +131,78 @@ h4 {
     color: #22343D;
 }
 
-input, textarea {
-    width: 100%;
-    height: 100%;
+input {
+    height: 3.5rem;
     border: 1px solid #979797;
     border-radius: .5rem;
     margin-top: 1em;
+    padding: .3rem;
 }
 
 .form-section {
     display: flex;
-    justify-content: center;
-    height: 38rem;
-    margin-top: 6em;
+    height: 40rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
 }
 
-form {
+.form-one {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
 }
 
-form div {
-    width: 50%;
-    
-    
+label {
+    width: 40%;
 }
-form div.message {
-    width: 50%;
+
+label button {
+    margin-top: 1em;
+    align-self: flex-start;
+}
+
+.label-message,
+.label-name,
+.label-email {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-}
-form div.message textarea {
-    border-radius: 1rem;
-    height: 10rem;
-    padding: 0.8rem;
-}
-
-form div :is(textarea, input):focus {
-    outline-color: var(--secondary-color);
-    outline-width: 1px;
-}
-
-form button {
-    
-    margin-top: 1em;
-    
-}
-
-form label,
-button {
-    margin-left: .5em;
 }
 
 .message {
-    height: 80%;
+    resize: none;
+    height: 12rem;
+    border-radius: 0.5rem;
+    border: 1px solid #979797;
+}
+
+.form-two-section {
+    display: none;
+    height: 30rem;
+}
+
+.form-two {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+select {
+    width: 100%;
+    height: 3rem;
+    border-radius: .5rem;
+    border: 2px solid #a4a4a4;
+    background-color: #fff;
 }
 
 .wrapper {
@@ -142,7 +215,7 @@ button {
     padding: 1rem;
 }
 
-:is(.parent-box, .parent-box-one, .parent-box-two, .parent-box-three){
+.parent-box {
     width: 95%;
     height: 3.1rem;
     display: flex;
@@ -153,7 +226,6 @@ button {
     background-color: #fff;
     border-radius: 1.5rem;
     overflow: hidden;
-    padding-top: 0.14rem;
     transition: height .4s ease-in-out;
 }
 
@@ -169,7 +241,7 @@ button {
     padding: 0.5rem;
 }
 
-:is(.parent-box, .parent-box-one, .parent-box-two, .parent-box-three) h4 {
+.child-top {
     color: #1099C3;
 }
 
@@ -186,8 +258,9 @@ button {
 }
 
 .parent-box p,
-h4 {
+h3 {
     padding: 0 1rem 0 1rem;
+    padding-top: 3px;
 }
 
 .parent-box-one {
@@ -329,12 +402,11 @@ h4 {
 
 .accordion-section {
     display: flex;
-    margin-bottom: 8em;
 }
 
-.image-container img {
+/* .image-container img {
     width: 280px;
-}
+} */
 
 .faq-heading {
     display: flex;
@@ -383,6 +455,100 @@ iframe#gmap-canvas {
     display: none;
 }
 
+@media screen and (max-width:420px) {
+    body {
+        max-width: 100%;
+    }
+   
+    .label-name,
+    .label-email,
+    .label-message {
+        width: 70%;
+    }
+    label button {
+        width: 8rem;
+        height: 2rem;
+    }
+    .dropdown {
+        width: 70%;
+    }
+    .accordion-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq-heading {
+        align-self: flex-start;
+        margin-left: 1rem;
+    }
+    .parent-box,
+    .parent-box-one,
+    .parent-box-two,
+    .parent-box-three {
+        font-size: 0.85rem;
+    }
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:720px) {
+    body {
+        max-width: 100%;
+    }
+    header {
+        display: none;
+    }
+    .heading p {
+        width: 15rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .label-name,
+    .label-email,
+    .label-message {
+        width: 70%;
+    }
+    
+    .dropdown {
+        width: 70%;
+    }
+    .accordion-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq-heading {
+        align-self: flex-start;
+        margin-left: 1rem;
+    }
+    .parent-box,
+    .parent-box-one,
+    .parent-box-two,
+    .parent-box-three {
+        width: 90%;
+    }
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width:1024px) {
     body {
         max-width: 100%;
@@ -390,144 +556,37 @@ iframe#gmap-canvas {
     header {
         display: none;
     }
-    main {
-        width: 100%;
-        font-size: 1em;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
+    .heading p {
+        text-align: center;
     }
-    section.heading {
-        width: 100%;
+    .label-name,
+    .label-email,
+    .label-message {
+        width: 70%;
+    }
+    
+    
+    .dropdown {
+        width: 70%;
+    }
+    .accordion-section {
+        display: flex;
+        width: 95%;
         margin: auto;
     }
     .wrapper {
         margin: 0;
+        width: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
     }
     .faq-heading {
-        display: flex;
         align-self: flex-start;
         margin-left: 1rem;
     }
     .image-container {
-        margin-right: 2rem;
-    }
-    section.heading p {
-        font-size: 0.6em;
-    }
-    form {
-        margin: 0;
-    }
-    form div:nth-of-type(3) {
-        width: 70%;
-    }
-    form div:nth-of-type(2) {
-        width: 70%;
-    }
-    form div:nth-of-type(1) {
-        width: 70%;
-    }
-    input {
-        height: 100%;
-    }
-    .message {
-        height: 100%;
-    }
-    form button {
-        width: 50%;
-        height: 30%;
-        
-    }
-    .accordion-section {
-        width: 100%;
-        margin: 0;
-    }
-    .wrapper {
-        width: 100%;
-    }
-    .dot-icon {
-        width: 100%;
+        width: 80%;
         display: flex;
-    }
-    .map-section {
-        width: 100%;
-    }
-    @media screen and (max-width:720px) {
-        body {
-            max-width: 100%;
-        }
-        header {
-            display: none;
-        }
-        main {
-            width: 100%;
-            font-size: 1em;
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-        }
-        section.heading {
-            width: 100%;
-            margin: auto;
-        }
-        .wrapper {
-            margin: 0;
-            display: flex;
-            align-items: center;
-        }
-        .faq-heading {
-            display: flex;
-            align-self: flex-start;
-            margin-left: 1rem;
-        }
-        .image-container {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-        section.heading p {
-            font-size: 0.6em;
-        }
-        form {
-            margin: 0;
-        }
-        form div:nth-of-type(3) {
-            width: 70%;
-        }
-        form div:nth-of-type(2) {
-            width: 70%;
-        }
-        form div:nth-of-type(1) {
-            width: 70%;
-        }
-        input {
-            height: 100%;
-        }
-        .message {
-            height: 100%;
-        }
-        form button {
-            width: 50%;
-            height: 30%;
-        }
-        .accordion-section {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-        }
-        .wrapper {
-            width: 100%;
-        }
-        .dot-icon {
-            width: 100%;
-            display: flex;
-        }
-        .map-section {
-            width: 100%;
-            height: 50%;
-        }
     }
 }

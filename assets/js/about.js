@@ -63,8 +63,6 @@ const cardDetails = [
 ];
 
 const cards = document.getElementsByClassName("single-card");
-const nextButton = document.getElementById("next-arrow");
-const prevButton = document.getElementById("prev-arrow");
 const carousels = document.getElementsByClassName("card-carousel");
 const personName = document.querySelector(".person-name");
 const personJob = document.querySelector(".person-job");
@@ -79,6 +77,9 @@ function showPerson() {
   personName.textContent = person.name;
 }
 
+const setupTes = () => {
+  const nextButton = document.getElementById("next-arrow");
+const prevButton = document.getElementById("prev-arrow");
 nextButton.addEventListener("click", () => {
   defaultIndex++;
   if (defaultIndex >= cardDetails.length) {
@@ -101,3 +102,4 @@ prevButton.addEventListener("click", () => {
   carousels[defaultIndex + 1].style.backgroundColor = "#979797";
   showPerson();
 });
+}

@@ -8,11 +8,20 @@
     <meta name="keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
-    <link rel="stylesheet" href="./assets/css/general.css">
-    <link rel="stylesheet" href="./assets/css/services.css">
-
+    <link rel="stylesheet" href="./assets/css/general.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/services.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/team.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
 </head>
-<body>
+<body data-barba="wrapper">
+    <div class="loading_cover" id="loading_cover__back"></div>
+    <div class="loading_cover" id="loading_cover__mid"></div>
+    <div class="loading_cover" id="loading_cover__front">
+    <img width="200px" src="./assets/images/ASTRO LOGO Solo.svg" alt="">
+  </div>
+  <div id="loading_cover"></div>
     <header class="header">
         <div class="logo">
             AstroSoft
@@ -22,12 +31,11 @@
             <li>
               <a href="/about.html"
                 >About
-                <div class="underline"></div>
               </a>
             </li>
             <li><a href="/services.html">Services</a></li>
-            <li class="nav_link--active"><a href="/portfolio.html">Portfolio</a></li>
-            <li><a href="/contact.html">Team</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/team.html">Team</a></li>
             
             <li>
                 <button class="button">
@@ -41,8 +49,11 @@
             <div class="header_ham__line"></div>
         </div>
     </header>
-    <main>
+    <main data-barba="container" data-barba-namespace="page-service">
         <section class="sect banner_sect">
+            <svg class="banner_wave" viewBox="0 0 1400 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 21.9999H0C538.755 -7.45819 845.382 -7.10962 1400 21.9999Z" fill="#FFFFFF"/>
+                </svg>
             <div class="sect_text">
 
                 <h2>Our Services</h2>
@@ -100,10 +111,8 @@
                     </a>
                 </div>
             </div>
+       
         </section>
-        <svg class="banner_wave" viewBox="0 0 1400 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 21.9999H0C538.755 -7.45819 845.382 -7.10962 1400 21.9999Z" fill="#FFFFFF"/>
-            </svg>
             
         <section class="sect sect_col services_sect">
             <div class="sect_text">
@@ -238,21 +247,24 @@
             </div>
         </section>
         
-        <section class="sect contact_sect">
-            <div class="sect_text">
-                <p class="sect_text--small">
-                    <b>Got a project?</b>
-                </p>
-                <h3>
-                    We are here to help! <br/>Get in Touch with Us
-                </h3>
-                <button class="button">Contact Us</button>
-            </div>
-            <div class="parallax sect_image">
-                <img src="./assets/images/email.svg" alt="">
-            </div>
-        </section>
-    </main>
+      </main>
+      <section class="sect contact_sect">
+          <div class="sect_text">
+              <p class="sect_text--small">
+                  <b>Got a project?</b>
+              </p>
+              <h3>
+                  We are here to help! <br/>Get in Touch with Us
+              </h3>
+              <button class="button">Contact Us</button>
+          </div>
+          <div class="parallax sect_image">
+              <img src="./assets/images/email.svg" alt="">
+          </div>
+      </section>
+     
+  
+      
     <footer class="footer">
       
         <article class="contact-details-header">
@@ -349,6 +361,15 @@
   </div>
       </footer>
     <script src="./assets/js/header.js"></script>
-    <script src="parallax.js"></script>
+
+      <!-- load barba (UMD version) -->
+      <script src="https://unpkg.com/@barba/core"></script>
+  
+      <!-- load gsap animation library (minified version) -->
+      <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+  
+      <!-- init barba with a simple opacity transition -->
+      <script src="./assets/js/transitions.js"></script>
+    
 </body>
 </html>

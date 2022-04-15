@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="./assets/css/general.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
-    
+    <title>project</title>
+    <link rel="stylesheet" href="./assets/css/general.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/services.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/team.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <script src="https://kit.fontawesome.com/746909f503.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body data-barba="wrapper">
+    <div class="loading_cover" id="loading_cover__back"></div>
+    <div class="loading_cover" id="loading_cover__mid"></div>
+    <div class="loading_cover" id="loading_cover__front">
+    <img width="200px" src="./assets/images/ASTRO LOGO Solo.svg" alt="">
+  </div>
     <header class="header">
         <div class="logo">
             AstroSoft
@@ -20,12 +29,12 @@
             <li>
               <a href="/about.html"
                 >About
-                <div class="underline"></div>
+                
               </a>
             </li>
             <li><a href="/services.html">Services</a></li>
             <li class="nav_link--active"><a href="/portfolio.html">Portfolio</a></li>
-            <li><a href="/contact.html">Team</a></li>
+            <li><a href="/team.html">Team</a></li>
             
             <li>
                 <button class="button">
@@ -39,13 +48,17 @@
             <div class="header_ham__line"></div>
         </div>
     </header>
-    <main>
+    <main data-barba="container" data-barba-namespace="page-a">
         <section class="sect banner_sect">
             <div class="sect_text">
 
-                <h2>Our Portfolio</h2>
+                <h2>Contact Us</h2>
                 <div class="breadcrumbs">
-                    Home / <span class="highlight_text">Portfolio</span>
+                    <a href="/index.html">Home</a> / 
+                      <a href="/index.html">
+                        <span class="highlight_text">Contact</span>
+                      </a>
+                    
                 </div>
                 <div class="socials">
                    
@@ -99,31 +112,52 @@
                 </div>
             </div>
         </section>
-        <svg class="banner_wave" viewBox="0 0 1400 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1400 21.9999H0C538.755 -7.45819 845.382 -7.10962 1400 21.9999Z" fill="#FFFFFF"/>
-            </svg>
-            <section class="heading">
-                <div> <span>Get in Touch</span> <span>Get a Quote</span></div>
-                <div>
-                    <h4>Ready to get started?</h4>
-                    <p>Send us a mail to get started. We can't wait to hear from you!</p>
-                </div>
-            </section>
-        <section class="form-section">
-            <form action="#">
+        <section class="heading">
+            <div> <a id="get-in-touch" class="get-in-touch">Get in Touch</a> <a id="get-quote">Get a Quote</a></div>
+            <div>
+                <h4>Ready to get started?</h4>
+                <p>Send us a mail to get started. We can't wait to hear from you!</p>
+            </div>
+        </section>
+        <section class="form-section" id="form-one-section">
+            <form action="#" id="form-one" class="form-one">
 
-                <div>
-                    <label for="name"> Your Name</label>
-                    <input type="text" class="name"></div>
-                <div>
-                    <label for="email"> Your Email</label>
-                    <input type="text" class="email"></div>
+                <label for="name" class="label-name"> your Name?
+                        <input type="text" class="name"></div>
+                    </label>
 
-                <div class="message">
-                    <label for="message">Message</label>
-                    <textarea rows="20" type="text" class="message"></textarea>
-                    <button class="button">Send Message</button>
-                </div>
+                <label for="email" class="label-email"> your Email?
+                        <input type="text" class="email">
+                    </label>
+
+                <label for="message" class="label-message">Message
+               <textarea name="" id="" cols="20" rows="10" class="message"></textarea>
+                        <button class="button">Send Message</button>
+                    </label>
+            </form>
+        </section>
+        <section class="form-two-section" id="form-two-section">
+            <form action="#" id="form-two" class="form-two">
+
+                <label for="name" class="label-name"> your Name?
+                        <input type="text" class="name"></div>
+                    </label>
+
+                <label for="email" class="label-email"> your Email?
+                        <input type="text" class="email">
+                    </label>
+                <label for="" class="dropdown"> our services:
+                <select name="dropdown" id="">
+                    <option value="nil">nil</option>
+                  <option value="market analysis">market analysis</option>
+                  <option value="content marketing"> content marketing</option>
+           <option value="branding">branding</option>
+         <option value="business consultation">business consultation</option>
+        <option value="ui & ux design">UI & UX design</option>
+      <option value="web development">web development</option>
+              </select></label>
+
+
             </form>
         </section>
         <section class="accordion-section">
@@ -138,7 +172,7 @@
                 </div>
                 <div class="parent-box" id="dropone">
                     <div class="child-box child-top">
-                        <h4>How can i get started?</h4>
+                        <h3>How can i get started?</h3>
                         <span id="span"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAESUlEQVRoge2aT2gcVRzHP7/ZNbZqLT0Yg4JU0VhjemiNVLL/bFZaSiso/rlY20MPOXjwqgX1IlUQFISiiBcJeijNoUgrojFsNknVRqE0SqKI+I/qFmlk0yaY3fl52Ex3Nvt33ptkK/o5vX3zfr/3/e6bN2/mzcD/XF1IqNlGdTNREkAP0A1sAm5cPjqPMAd8B8wC48RlNqyu7Y2MaQ/CAeAJ4I6A0b8BwwhDxGXKRoa5kTFNAYcRdtkIuIJyGuEIcU4iokHDgxuZ1Fsp8grwdODYVhDGEJ4hJtPBwoIwrgdRjgLXB4oLzt/AYeK83urotGZkSq9hgbeAQxbigiOc4BJPsVsuNW/ajCm9jkWOoewNRVxwPqeDfeyQPxs1amykNBIngD1hKjNgCmGAuOTrNXAahi/wLu03AdCHy3GOaaReg/pGxnUQOLAaqowQdnELL9Y/XIusdgNngXXWAlxiRHBQsta5wEVJkpSJlQfqGTlFWKdUQmQ5Z+BFrg7TrGc7fbLkr6w+tbL6MFfHvKhHL4vVy0CtOfLcGoixQ3meb7TDX1VpZExjQP9aajLkNi7yqL+i0ohwcE3l2FFxr1c2UrpGP77WaoxRdpPVTd7PspEu7qP0IPRvIYqS8n6UjTgk2yLHBuFBr+ifI/e2QYotPV6hbETpbosUO+72Cv4RubkNQmzp9Ap+Ize0QYgt67yF0X9qRdsmx4aFku6yEWG+bWLMKdAnl6Hy1LrYJjE2zHkF/4j8YJRKiSPcD+QMonNAH0LCqG/Kmv0jYrZ9KSwSlykc0gQzk8MhTUK+AhaN+lZmvKJ/sp82SgYfkdGtxGSaCCngfAsxF3B5iJhMM6lbUD406lmY9Ir+UysDLNVq34SbcBgho1vplxkiDNDYzAVc0qTkHJO6hSKjQJdBv+AwUi56xCWPMmqUsHUz4ZmAb4lJzTkCMGSYFJqbCdMEKO/5f1YaiTIM/GGcvGTmUya0l36ZwfHt1DsMkJJzTGgvRTLYmIAFOhoZ6ZcF4A2LDgA6cfnsygXAw5vYLp/gu0cy5B0ekIo/vHrzocBR4BfLjsoj4xHOSIDwFwVera6uxZg+hnDcqsMSOWR581s5if1IADxLQt5cWVl/E3tch1D2h9BxmGQ4T5onpbjyQCMjG1DO4Ht4aTO/o2wnKTXXqPqb2HHJ47KH1lbq1SaPsreeCWj2WiElP1LaPjW5IQyLeVweISlfN2rU2qu3jN6Fw8fA7WEoC0AOh33E5Eyzho1HxCMl37PINoRha2mt8yUFdrRiAoK+1VUVJhhEOcLqbeZdRniZJV5jpxRaDTL7YGBCOynyAsIhYL1RjmoKKO8T4SVi8lPQYLtPOEa1iyiDKPsR7jTM8ivwAS5vL19cjAjnoxpVIcs2II2QBO4BNgMrX14q8DPKLEIWhxH6+QIR11ZCuF8H+Tml17KRjcAGCji45IE5dorZY+1/hX8AB3g0zHrHmrAAAAAASUVORK5CYII="></span>
                     </div>
                     <div class="child-box child-bottom" id="childBottomOne">
@@ -147,7 +181,7 @@
                 </div>
                 <div class="parent-box-one" id="drop-two">
                     <div class="child-box-one">
-                        <h4>Duration for a project</h4>
+                        <h3>Duration for a project</h3>
                         <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAESUlEQVRoge2aT2gcVRzHP7/ZNbZqLT0Yg4JU0VhjemiNVLL/bFZaSiso/rlY20MPOXjwqgX1IlUQFISiiBcJeijNoUgrojFsNknVRqE0SqKI+I/qFmlk0yaY3fl52Ex3Nvt33ptkK/o5vX3zfr/3/e6bN2/mzcD/XF1IqNlGdTNREkAP0A1sAm5cPjqPMAd8B8wC48RlNqyu7Y2MaQ/CAeAJ4I6A0b8BwwhDxGXKRoa5kTFNAYcRdtkIuIJyGuEIcU4iokHDgxuZ1Fsp8grwdODYVhDGEJ4hJtPBwoIwrgdRjgLXB4oLzt/AYeK83urotGZkSq9hgbeAQxbigiOc4BJPsVsuNW/ajCm9jkWOoewNRVxwPqeDfeyQPxs1amykNBIngD1hKjNgCmGAuOTrNXAahi/wLu03AdCHy3GOaaReg/pGxnUQOLAaqowQdnELL9Y/XIusdgNngXXWAlxiRHBQsta5wEVJkpSJlQfqGTlFWKdUQmQ5Z+BFrg7TrGc7fbLkr6w+tbL6MFfHvKhHL4vVy0CtOfLcGoixQ3meb7TDX1VpZExjQP9aajLkNi7yqL+i0ohwcE3l2FFxr1c2UrpGP77WaoxRdpPVTd7PspEu7qP0IPRvIYqS8n6UjTgk2yLHBuFBr+ifI/e2QYotPV6hbETpbosUO+72Cv4RubkNQmzp9Ap+Ize0QYgt67yF0X9qRdsmx4aFku6yEWG+bWLMKdAnl6Hy1LrYJjE2zHkF/4j8YJRKiSPcD+QMonNAH0LCqG/Kmv0jYrZ9KSwSlykc0gQzk8MhTUK+AhaN+lZmvKJ/sp82SgYfkdGtxGSaCCngfAsxF3B5iJhMM6lbUD406lmY9Ir+UysDLNVq34SbcBgho1vplxkiDNDYzAVc0qTkHJO6hSKjQJdBv+AwUi56xCWPMmqUsHUz4ZmAb4lJzTkCMGSYFJqbCdMEKO/5f1YaiTIM/GGcvGTmUya0l36ZwfHt1DsMkJJzTGgvRTLYmIAFOhoZ6ZcF4A2LDgA6cfnsygXAw5vYLp/gu0cy5B0ekIo/vHrzocBR4BfLjsoj4xHOSIDwFwVera6uxZg+hnDcqsMSOWR581s5if1IADxLQt5cWVl/E3tch1D2h9BxmGQ4T5onpbjyQCMjG1DO4Ht4aTO/o2wnKTXXqPqb2HHJ47KH1lbq1SaPsreeCWj2WiElP1LaPjW5IQyLeVweISlfN2rU2qu3jN6Fw8fA7WEoC0AOh33E5Eyzho1HxCMl37PINoRha2mt8yUFdrRiAoK+1VUVJhhEOcLqbeZdRniZJV5jpxRaDTL7YGBCOynyAsIhYL1RjmoKKO8T4SVi8lPQYLtPOEa1iyiDKPsR7jTM8ivwAS5vL19cjAjnoxpVIcs2II2QBO4BNgMrX14q8DPKLEIWhxH6+QIR11ZCuF8H+Tml17KRjcAGCji45IE5dorZY+1/hX8AB3g0zHrHmrAAAAAASUVORK5CYII="></span>
                     </div>
                     <div class="child-box-bottom-one" id="child-Bottom-two">
@@ -157,7 +191,7 @@
                 </div>
                 <div class="parent-box-two" id="drop-three">
                     <div class="child-box-two">
-                        <h4>Cost of a project?</h4>
+                        <h3>Cost of a project?</h3>
                         <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAESUlEQVRoge2aT2gcVRzHP7/ZNbZqLT0Yg4JU0VhjemiNVLL/bFZaSiso/rlY20MPOXjwqgX1IlUQFISiiBcJeijNoUgrojFsNknVRqE0SqKI+I/qFmlk0yaY3fl52Ex3Nvt33ptkK/o5vX3zfr/3/e6bN2/mzcD/XF1IqNlGdTNREkAP0A1sAm5cPjqPMAd8B8wC48RlNqyu7Y2MaQ/CAeAJ4I6A0b8BwwhDxGXKRoa5kTFNAYcRdtkIuIJyGuEIcU4iokHDgxuZ1Fsp8grwdODYVhDGEJ4hJtPBwoIwrgdRjgLXB4oLzt/AYeK83urotGZkSq9hgbeAQxbigiOc4BJPsVsuNW/ajCm9jkWOoewNRVxwPqeDfeyQPxs1amykNBIngD1hKjNgCmGAuOTrNXAahi/wLu03AdCHy3GOaaReg/pGxnUQOLAaqowQdnELL9Y/XIusdgNngXXWAlxiRHBQsta5wEVJkpSJlQfqGTlFWKdUQmQ5Z+BFrg7TrGc7fbLkr6w+tbL6MFfHvKhHL4vVy0CtOfLcGoixQ3meb7TDX1VpZExjQP9aajLkNi7yqL+i0ohwcE3l2FFxr1c2UrpGP77WaoxRdpPVTd7PspEu7qP0IPRvIYqS8n6UjTgk2yLHBuFBr+ifI/e2QYotPV6hbETpbosUO+72Cv4RubkNQmzp9Ap+Ize0QYgt67yF0X9qRdsmx4aFku6yEWG+bWLMKdAnl6Hy1LrYJjE2zHkF/4j8YJRKiSPcD+QMonNAH0LCqG/Kmv0jYrZ9KSwSlykc0gQzk8MhTUK+AhaN+lZmvKJ/sp82SgYfkdGtxGSaCCngfAsxF3B5iJhMM6lbUD406lmY9Ir+UysDLNVq34SbcBgho1vplxkiDNDYzAVc0qTkHJO6hSKjQJdBv+AwUi56xCWPMmqUsHUz4ZmAb4lJzTkCMGSYFJqbCdMEKO/5f1YaiTIM/GGcvGTmUya0l36ZwfHt1DsMkJJzTGgvRTLYmIAFOhoZ6ZcF4A2LDgA6cfnsygXAw5vYLp/gu0cy5B0ekIo/vHrzocBR4BfLjsoj4xHOSIDwFwVera6uxZg+hnDcqsMSOWR581s5if1IADxLQt5cWVl/E3tch1D2h9BxmGQ4T5onpbjyQCMjG1DO4Ht4aTO/o2wnKTXXqPqb2HHJ47KH1lbq1SaPsreeCWj2WiElP1LaPjW5IQyLeVweISlfN2rU2qu3jN6Fw8fA7WEoC0AOh33E5Eyzho1HxCMl37PINoRha2mt8yUFdrRiAoK+1VUVJhhEOcLqbeZdRniZJV5jpxRaDTL7YGBCOynyAsIhYL1RjmoKKO8T4SVi8lPQYLtPOEa1iyiDKPsR7jTM8ivwAS5vL19cjAjnoxpVIcs2II2QBO4BNgMrX14q8DPKLEIWhxH6+QIR11ZCuF8H+Tml17KRjcAGCji45IE5dorZY+1/hX8AB3g0zHrHmrAAAAAASUVORK5CYII="></span>
                     </div>
                     <div class="child-box-bottom-two" id="child-Bottom-three">
@@ -168,7 +202,7 @@
                 </div>
                 <div class="parent-box-three" id="drop-four">
                     <div class="child-box-three">
-                        <h4>Do i also get support?</h4>
+                        <h3>Do i also get support?</h3>
                         <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAESUlEQVRoge2aT2gcVRzHP7/ZNbZqLT0Yg4JU0VhjemiNVLL/bFZaSiso/rlY20MPOXjwqgX1IlUQFISiiBcJeijNoUgrojFsNknVRqE0SqKI+I/qFmlk0yaY3fl52Ex3Nvt33ptkK/o5vX3zfr/3/e6bN2/mzcD/XF1IqNlGdTNREkAP0A1sAm5cPjqPMAd8B8wC48RlNqyu7Y2MaQ/CAeAJ4I6A0b8BwwhDxGXKRoa5kTFNAYcRdtkIuIJyGuEIcU4iokHDgxuZ1Fsp8grwdODYVhDGEJ4hJtPBwoIwrgdRjgLXB4oLzt/AYeK83urotGZkSq9hgbeAQxbigiOc4BJPsVsuNW/ajCm9jkWOoewNRVxwPqeDfeyQPxs1amykNBIngD1hKjNgCmGAuOTrNXAahi/wLu03AdCHy3GOaaReg/pGxnUQOLAaqowQdnELL9Y/XIusdgNngXXWAlxiRHBQsta5wEVJkpSJlQfqGTlFWKdUQmQ5Z+BFrg7TrGc7fbLkr6w+tbL6MFfHvKhHL4vVy0CtOfLcGoixQ3meb7TDX1VpZExjQP9aajLkNi7yqL+i0ohwcE3l2FFxr1c2UrpGP77WaoxRdpPVTd7PspEu7qP0IPRvIYqS8n6UjTgk2yLHBuFBr+ifI/e2QYotPV6hbETpbosUO+72Cv4RubkNQmzp9Ap+Ize0QYgt67yF0X9qRdsmx4aFku6yEWG+bWLMKdAnl6Hy1LrYJjE2zHkF/4j8YJRKiSPcD+QMonNAH0LCqG/Kmv0jYrZ9KSwSlykc0gQzk8MhTUK+AhaN+lZmvKJ/sp82SgYfkdGtxGSaCCngfAsxF3B5iJhMM6lbUD406lmY9Ir+UysDLNVq34SbcBgho1vplxkiDNDYzAVc0qTkHJO6hSKjQJdBv+AwUi56xCWPMmqUsHUz4ZmAb4lJzTkCMGSYFJqbCdMEKO/5f1YaiTIM/GGcvGTmUya0l36ZwfHt1DsMkJJzTGgvRTLYmIAFOhoZ6ZcF4A2LDgA6cfnsygXAw5vYLp/gu0cy5B0ekIo/vHrzocBR4BfLjsoj4xHOSIDwFwVera6uxZg+hnDcqsMSOWR581s5if1IADxLQt5cWVl/E3tch1D2h9BxmGQ4T5onpbjyQCMjG1DO4Ht4aTO/o2wnKTXXqPqb2HHJ47KH1lbq1SaPsreeCWj2WiElP1LaPjW5IQyLeVweISlfN2rU2qu3jN6Fw8fA7WEoC0AOh33E5Eyzho1HxCMl37PINoRha2mt8yUFdrRiAoK+1VUVJhhEOcLqbeZdRniZJV5jpxRaDTL7YGBCOynyAsIhYL1RjmoKKO8T4SVi8lPQYLtPOEa1iyiDKPsR7jTM8ivwAS5vL19cjAjnoxpVIcs2II2QBO4BNgMrX14q8DPKLEIWhxH6+QIR11ZCuF8H+Tml17KRjcAGCji45IE5dorZY+1/hX8AB3g0zHrHmrAAAAAASUVORK5CYII="></span>
                     </div>
                     <div class="child-box-bottom-three" id="child-bottom-four">
@@ -179,7 +213,7 @@
                 </div>
             </div>
             <div class="image-container">
-                <img src="./assets/images/pana.png" alt="">
+                <img class="faq_img" src="./assets/images/pana.png" alt="">
             </div>
 
         </section>
@@ -221,105 +255,112 @@
             <img src="./assets/images/email.svg" alt="">
         </div>
     </section>
-      <!--Contact Section-->
-      <footer class="footer">
+  
+     
+       <footer class="footer">
+        
+          <article class="contact-details-header">
+            <div class="logo-container">
+              <img src="./assets/images/logo.png" alt="Logo" class="logo" />
+            </div>
+            <h6>Lorem ipsum dolor sit amet</h6>
+          </article>
+         
+    <article class="contact-details-items">
+      <!--Single Contact means-->
+      <!-- <div class="footer-vertical-underline"></div> -->
+      <div class="single-contact-item">
+        <div><img src="./assets/images/call-icon.png" alt="" class="footer-icon"></div>
       
-        <article class="contact-details-header">
-          <div class="logo-container">
-            <img src="./assets/images/logo.png" alt="Logo" class="logo" />
-          </div>
-          <h6>Lorem ipsum dolor sit amet</h6>
-        </article>
-       
-  <article class="contact-details-items">
-    <!--Single Contact means-->
-    <!-- <div class="footer-vertical-underline"></div> -->
-    <div class="single-contact-item">
-      <div><img src="./assets/images/call-icon.png" alt="" class="footer-icon"></div>
     
-  
-    <div>
-      <h5>Call Us</h5>
-      <p>+234 989 827 028</p>
-      <p>+234 989 827 028</p>
-    </div>
-    </div>
-    <div class="single-contact-item">
-      <div><img src="./assets/images/email-icon.png" alt="" class="footer-icon"></div>
+      <div>
+        <h5>Call Us</h5>
+        <p>+234 989 827 028</p>
+        <p>+234 989 827 028</p>
+      </div>
+      </div>
+      <div class="single-contact-item">
+        <div><img src="./assets/images/email-icon.png" alt="" class="footer-icon"></div>
+      
     
-  
-    <div>
-      <h5>Email Us</h5>
-      <p>support24@gmail.com</p>
-      <p>infobisnis@gmail.com</p>
-    </div>
-    </div>
-    <div class="single-contact-item">
-      <div><img src="./assets/images/location-icon.png" alt="" class="footer-icon"></div>
+      <div>
+        <h5>Email Us</h5>
+        <p>support24@gmail.com</p>
+        <p>infobisnis@gmail.com</p>
+      </div>
+      </div>
+      <div class="single-contact-item">
+        <div><img src="./assets/images/location-icon.png" alt="" class="footer-icon"></div>
+      
     
-  
-    <div>
-      <h5>Location</h5>
-      <p>Beside Pere, by the Express, Green<br>
-        Villa Road, Biogbolo, Bayelsa State.
-        
-        </p>
-      <p>Mon - Fri:  9:00 AM - 5:00 PM</p>
-    </div>
-    </div>
-    <!--End of Single Contact Means-->
-    <div class="rocket-container">
-      <div><img src="./assets/images/noto_rocket.png" alt="" class="rocket"></div>
-      <div class="navigation-icon-container">
-        <a href="#main"><img src="./assets/images/navigation-icon.png" alt="" class="navigation-icon"></a></div>
-    </div>
-  </article>
-  
-  <div class="nav-links-container footer-links">
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li>
-        <a href="#home"
-          >About
-        </a>
-      </li>
-      <li><a href="#home">Services</a></li>
-      <li><a href="#home">Portfolio</a></li>
-      <li><a href="#home">Team</a></li>
-      <li><a href="#home">Blog</a></li>
-      <li >
-        <a class="btn" href="#home">Contact Us</a>
-      </li>
-    </ul>
-  </div>
-  <div class="footer-underline"></div>
-  <div class="copyright-container">
-    <p class="copyright">Copyright @ Astrosoft Dev <script type="text/javascript">
-      document.write("2021 - "+ new Date().getFullYear());
-      </script>. All Rights Reserved.</p>
-    <article class="banner-icons footer-icons">
-      <span>
-        <a href=""><i class="fa-brands fa-twitter twitter"></i></a>
-        
-      </span>
-  
-      <span>
-        <a href=""><i class="fa-brands fa-linkedin-in linkedin"></i></a></span>
-      <span class="facebook-container">
-        <a href="">
-  
-          <i class="fa-brands fa-facebook-f facebook"></i
-        ></span>
-        </a>
-      <span>
-        <a href=""><i class="fa-brands fa-instagram instagram"></i></a>
-      </span>
+      <div>
+        <h5>Location</h5>
+        <p>Beside Pere, by the Express, Green<br>
+          Villa Road, Biogbolo, Bayelsa State.
+          
+          </p>
+        <p>Mon - Fri:  9:00 AM - 5:00 PM</p>
+      </div>
+      </div>
+      <!--End of Single Contact Means-->
+      <div class="rocket-container">
+        <div><img src="./assets/images/noto_rocket.png" alt="" class="rocket"></div>
+        <div class="navigation-icon-container">
+          <a href="#main"><img src="./assets/images/navigation-icon.png" alt="" class="navigation-icon"></a></div>
+      </div>
     </article>
-  </div>
-      </footer>
-      
+    
+    <div class="nav-links-container footer-links">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li>
+          <a href="#home"
+            >About
+          </a>
+        </li>
+        <li><a href="#home">Services</a></li>
+        <li><a href="#home">Portfolio</a></li>
+        <li><a href="#home">Team</a></li>
+        <li><a href="#home">Blog</a></li>
+        <li >
+          <a class="btn" href="#home">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-underline"></div>
+    <div class="copyright-container">
+      <p class="copyright">Copyright @ Astrosoft Dev <script type="text/javascript">
+          document.write("2021 - "+ new Date().getFullYear());
+          </script>. All Rights Reserved.</p>
+      <article class="banner-icons footer-icons">
+        <span>
+          <a href=""><i class="fa-brands fa-twitter twitter"></i></a>
+          
+        </span>
+    
+        <span>
+          <a href=""><i class="fa-brands fa-linkedin-in linkedin"></i></a></span>
+        <span class="facebook-container">
+          <a href="">
+    
+            <i class="fa-brands fa-facebook-f facebook"></i
+          ></span>
+          </a>
+        <span>
+          <a href=""><i class="fa-brands fa-instagram instagram"></i></a>
+        </span>
+      </article>
+    </div>
+        </footer>
 </body>
 <script src="./assets/js/header.js"></script>
 <script src="./assets/js/text.js"></script>
-
+      <!-- load barba (UMD version) -->
+      <script src="https://unpkg.com/@barba/core"></script>
+  
+      <!-- load gsap animation library (minified version) -->
+      <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+  
+      
+      <script src="./assets/js/transitions.js"></script>
 </html>

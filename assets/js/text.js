@@ -10,6 +10,14 @@ let childThree = document.getElementById('child-Bottom-three')
 let dropFour = document.getElementById('drop-four');
 let childFour = document.getElementById('child-Bottom-four');
 
+let quote = document.getElementById('get-quote')
+let formOne = document.getElementById('form-one')
+let formSectionTwo = document.getElementById('form-two-section')
+let formSectionOne = document.getElementById('form-one-section')
+let touch = document.getElementById('get-in-touch')
+
+
+
 dropOne.addEventListener('click', () => {
     dropTwo.classList.remove('dropped')
     dropThree.classList.remove('dropped')
@@ -51,4 +59,31 @@ dropFour.addEventListener('click', () => {
 
     dropFour.classList.toggle('dropped');
     childFour.style.display = 'flex';
+})
+
+
+
+
+quote.addEventListener('click', () => {
+    formSectionTwo.style.display = 'block'
+    formSectionOne.style.display = 'none'
+    quote.classList.add('getQuote')
+    touch.classList.add('getTouch')
+
+
+
+
+})
+
+touch.addEventListener('click', () => {
+    formSectionTwo.style.display = 'none'
+    formSectionOne.style.display = 'block'
+    touch.classList.remove('getTouch')
+    quote.classList.remove('getQuote')
+
+
+
+
+
+
 })
