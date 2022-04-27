@@ -385,12 +385,7 @@ Clients section
 .clients-section {
   padding-top: 2rem;
   padding-left: 2rem;
-  width: 390px;
-  /* width: 100%; */
-  /* height: 300px; */
-  background: var(--clr-white);
-  border-radius: 15px;
-  /* margin-top: 3.5rem; */
+
   padding-bottom: 1rem;
 }
 
@@ -418,16 +413,7 @@ Clients section
   width: 70px;
   height: 70px;
 }
-.client-company {
-  margin-top: 1.5rem;
-  background: var(--lightBg);
-  color: var(--buttonColor);
-  height: 35px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: flex;
-  align-items: center;
-}
+
 @media screen and (min-width: 768px) {
   .clients-section-container {
     width: 100%;
@@ -499,13 +485,7 @@ Clients section
   display: none;
 }
 
-.parent-box p,
-:is(.parent-box, .parent-box-one, .parent-box-two, .parent-box-three) h3 {
-  padding: 0 1rem 0 1rem;
-  padding-top: 3px;
-  font-size: 1.2rem;
-  margin-bottom: 0;
-}
+
 .parent-box p {
   font-size: 1rem;
   color: #666;

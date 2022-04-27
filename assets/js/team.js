@@ -15,7 +15,12 @@ function changeButton(button) {
 
 for (let i = 0; i < iconsButton.length; i++) {
   iconsButton[i].addEventListener("click", () => {
-    changeButton(iconsButton[i]);
+    console.log(iconsButton[i])
+    try {
+      changeButton(iconsButton[i]);
+    } catch (error) {
+      console.log(error)
+    }
     iconsContainer[i].classList.toggle("visible");
   });
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Astrosoft</title>
     <!--FontAwesome-->
     <link
       rel="stylesheet"
@@ -23,34 +23,55 @@
   <div class="loading_cover" id="loading_cover__front">
     <img width="200px" src="./assets/images/ASTRO LOGO Solo.svg" alt="">
   </div>
-    <header class="header">
-      <div class="logo">
-          AstroSoft
+  <header class="header">
+    <div class="logo">
+        <img  src="./assets/images/logo.png" alt="">
+    </div>
+    <ul class="nav-links">
+        <li class="nav_link--active"><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./team.html">Team</a></li>
+        
+        <li>
+            <button class="button">
+                <a class="btn" href="./contact.html">Contact Us</a>
+            </button>
+        </li>
+    </ul>
+    <div id="nav-menu" class="mobile_only header_ham">
+        <div class="header_ham__line"></div>
+        <div class="header_ham__line"></div>
+        <div class="header_ham__line"></div>
+    </div>
+</header>
+   <!--Sidebar Menu-->
+   <section class="sidebar-menu">
+    <div class="sidebar-dark-container"></div>
+
+    <div class="sidebar-menu-container">
+      <div class="close-btn-container">
+        <span><i class="fa fa-times" id="close-btn" aria-hidden="true"></i></span>
+
       </div>
-      <ul class="nav-links">
-          <li><a href="./index.html">Home</a></li>
-          <li>
-            <a href="./about.html"
-              >About
-              
-            </a>
-          </li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li class="nav_link--active"><a href="./contact.html">Team</a></li>
-          
-          <li>
-              <button class="button">
-                  <a class="btn" href="./contact.html">Contact Us</a>
-              </button>
-          </li>
-      </ul>
-      <div class="mobile_only header_ham">
-          <div class="header_ham__line"></div>
-          <div class="header_ham__line"></div>
-          <div class="header_ham__line"></div>
-      </div>
-  </header>
+      <ul class="sidebar-links">
+        <li><a href="/">Home</a></li>
+        <li>
+          <a href="/about.html"
+          >About
+        </a>
+      </li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/portfolio.html">Portfolio</a></li>
+      <li><a href="/team.html">Team</a></li>
+      <li >
+        <a class="btn" href="/contact.html">Contact Us </a>
+      </li>
+    </ul>
+  </div>
+  </section>
+<!--End of Sidebar-->
 <main data-barba="container" data-barba-namespace="contact" id="main">
        
         <div class="nav-menu" id="nav-menu">
@@ -127,33 +148,6 @@
     </section>
         <!--End of Banner -->
   
-        <!--Sidebar Menu-->
-        <section class="sidebar-menu">
-          <div class="sidebar-dark-container"></div>
-  
-          <div class="sidebar-menu-container">
-            <div class="close-btn-container">
-              <span><i class="fa fa-times" id="close-btn" aria-hidden="true"></i></span>
-  
-            </div>
-            <ul class="sidebar-links">
-              <li><a href="#home">Home</a></li>
-              <li>
-                <a href="#home"
-                >About
-              </a>
-            </li>
-            <li><a href="#home">Services</a></li>
-            <li><a href="#home">Portfolio</a></li>
-            <li><a href="#home">Team</a></li>
-            <li >
-              <a class="btn" href="#home">Contact Us </a>
-            </li>
-          </ul>
-        </div>
-        </section>
-      
-      <!--End of Sidebar-->
 
 <!--Team Members-->
 <section class="team-members-container team-page">
@@ -279,12 +273,15 @@
             </div>
                 <div class="team-icons-container">
 
-            <div class="slider-icon-container team-icon team-prev-icon">
-                <span id="prev-arrow"><i class="fa fa-chevron-left slider-icon" aria-hidden="true"></i></span>
-            </div> 
-            <div class="slider-icon-container team-icon team-next-icon">
-                <span id="next-arrow"><i class="fa fa-chevron-right slider-icon" aria-hidden="true"></i></span>
-            </div>
+                  <div class="team-icon team-prev-icon" id="prev-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M14 18 8 12 14 6 15.4 7.4 10.8 12 15.4 16.6Z"/></svg>
+                        
+                      
+                  </div> 
+                  <div class=" team-icon team-next-icon" id="next-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M9.4 18 8 16.6 12.6 12 8 7.4 9.4 6 15.4 12Z"/></svg>
+                      
+                  </div>
         </div>
     </div>
     <!--Clients Section-->

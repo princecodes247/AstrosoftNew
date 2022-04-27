@@ -21,35 +21,55 @@
     <div class="loading_cover" id="loading_cover__front">
     <img width="200px" src="./assets/images/ASTRO LOGO Solo.svg" alt="">
   </div>
-    <header class="header">
-      <div class="logo">
-          AstroSoft
+  <header class="header">
+    <div class="logo">
+        <img  src="./assets/images/logo.png" alt="">
+    </div>
+    <ul class="nav-links">
+        <li class="nav_link--active"><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./team.html">Team</a></li>
+        
+        <li>
+            <button class="button">
+                <a class="btn" href="./contact.html">Contact Us</a>
+            </button>
+        </li>
+    </ul>
+    <div id="nav-menu" class="mobile_only header_ham">
+        <div class="header_ham__line"></div>
+        <div class="header_ham__line"></div>
+        <div class="header_ham__line"></div>
+    </div>
+</header>
+   <!--Sidebar Menu-->
+   <section class="sidebar-menu">
+    <div class="sidebar-dark-container"></div>
+
+    <div class="sidebar-menu-container">
+      <div class="close-btn-container">
+        <span><i class="fa fa-times" id="close-btn" aria-hidden="true"></i></span>
+
       </div>
-      <ul class="nav-links">
-          <li><a href="./index.html">Home</a></li>
-          <li class="nav_link--active">
-            <a href="./about.html"
-              >About
-              
-            </a>
-          </li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./team.html">Team</a></li>
-          
-          <li>
-              <button class="button">
-                  <a class="btn" href="./contact.html">Contact Us</a>
-              </button>
-          </li>
-      </ul>
-      <div class="mobile_only header_ham">
-          <div class="header_ham__line"></div>
-          <div class="header_ham__line"></div>
-          <div class="header_ham__line"></div>
-      </div>
-  </header>
-<span >
+      <ul class="sidebar-links">
+        <li><a href="/">Home</a></li>
+        <li>
+          <a href="/about.html"
+          >About
+        </a>
+      </li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/portfolio.html">Portfolio</a></li>
+      <li><a href="/team.html">Team</a></li>
+      <li >
+        <a class="btn" href="/contact.html">Contact Us </a>
+      </li>
+    </ul>
+  </div>
+  </section>
+<!--End of Sidebar-->
     <main data-barba="container" data-barba-namespace="page-a" id="main">
     
       <div class="nav-menu" id="nav-menu">
@@ -124,33 +144,6 @@
         
       <!--End of Banner -->
 
-      <!--Sidebar Menu-->
-      <section class="sidebar-menu">
-        <div class="sidebar-dark-container"></div>
-
-        <div class="sidebar-menu-container">
-          <div class="close-btn-container">
-            <span><i class="fa fa-times" id="close-btn" aria-hidden="true"></i></span>
-
-          </div>
-          <ul class="sidebar-links">
-            <li><a href="#home">Home</a></li>
-            <li>
-              <a href="#home"
-              >About
-            </a>
-          </li>
-          <li><a href="#home">Services</a></li>
-          <li><a href="#home">Portfolio</a></li>
-          <li><a href="#home">Team</a></li>
-          <li >
-            <a class="btn" href="#home">Contact Us </a>
-          </li>
-        </ul>
-      </div>
-      </section>
-    
-    <!--End of Sidebar-->
     <!--About Text-->
     <section class="about-texts">
       <article class="about-header">
@@ -478,6 +471,7 @@
     <!--End of Contact Section-->
  <!--JS File-->
  <script src='./assets/js/header.js'></script>
+ 
  <script src='./assets/js/about.js'></script>
  <script src="./assets/js/home.js"></script>
  <script src="./assets/js/team.js"></script>

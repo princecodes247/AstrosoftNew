@@ -178,6 +178,14 @@ Nav section
 }
 
 @media screen and (max-width: 600px) {
+  .team-header {
+    
+    flex-direction: column;
+  }
+  .team-members-container {
+    text-align: center;
+    margin-top: 4em;
+  }
   .nav-section {
     margin: 0 0.5rem;
   }
@@ -265,7 +273,7 @@ About Statements
 }
 .image-container {
   width: 300px;
-  height: 500px;
+  height: unset;
   border-radius: 3px;
 }
 .about-section-details p {
@@ -301,6 +309,7 @@ About Statements
 @media screen and (max-width: 576px) {
   .about-header {
     text-align: center;
+    margin: 0 2em;
   }
   .about-details {
     flex-direction: column;
@@ -308,8 +317,10 @@ About Statements
     gap: 0;
   }
   .about-section-details {
-    margin-top: 4.5rem;
-    margin-left: 1rem;
+    margin-left: 0rem;
+    margin: 0 2em;
+    text-align: center;
+    margin-top: 3rem;
   }
 
   .image-container {
@@ -328,77 +339,8 @@ About Statements
   }
   .video-link-container {
     margin-left: 0;
-  }
-}
-
-/*
-=============
-sidebar Menu
-=============
-*/
-.sidebar-menu {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  display: none;
-}
-.sidebar-dark-container {
-  background: rgba(0, 0, 0, 0.5);
-  width: 60vw;
-  height: 100%;
-  animation: darkSideNav 0.5s ease-in-out 1;
-  animation-fill-mode: forwards;
-}
-.sidebar-menu.visible {
-  display: block;
-}
-#close-btn {
-  font-size: 1.5rem;
-  color: var(--cardTextColor);
-}
-.close-btn-container {
-  margin-bottom: 3rem;
-  position: absolute;
-  right: 2rem;
-  top: 1rem;
-  cursor: pointer;
-}
-.sidebar-menu-container {
-  position: absolute;
-  background: var(--clr-white);
-  padding-left: 1.5rem;
-  width: 40vw;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  animation: sideBarNav 1s ease-in-out 1;
-  animation-fill-mode: forwards;
-}
-.sidebar-links {
-  padding-top: 3rem;
-}
-.sidebar-links a {
-  color: var(--cardTextColor);
-  font-size: 1.2rem;
-}
-@keyframes darkSideNav {
-  0% {
-    transform: translateX(500px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes sideBarNav {
-  0% {
-    transform: translateX(300px);
-  }
-  100% {
-    transform: translatex(0);
+    text-align: center;
+    justify-content: center;
   }
 }
 
@@ -462,7 +404,7 @@ Team Section
 
 @media (min-width: 576px) and (max-width: 768px) {
   .section-container {
-    column-gap: 0.2rem;
+    column-gap: 1.3rem;
   }
   .single-service {
     width: 190px;
@@ -723,11 +665,6 @@ Footer Contact Section
   line-height: 1.5;
   color: var(--clr-white);
 }
-.contact-details-items {
-  margin-left: 3rem;
-  margin-top: 3rem;
-  width: 100%;
-}
 .single-contact-item {
   display: flex;
   gap: 2rem;
@@ -756,19 +693,6 @@ Footer Contact Section
   display: flex;
   justify-content: center;
 }
-.copyright-container p {
-  color: var(--clr-white);
-  font-size: 0.75rem;
-}
-.footer-vertical-underline {
-  height: 31rem;
-  width: 1px;
-  background: var(--footerUnderlineColor);
-  position: absolute;
-  top: 0;
-  left: 11rem;
-}
-
 
 @media screen and (min-width: 768px) {
   /* .contact-details-items {
@@ -816,13 +740,23 @@ Team Pages
   justify-content: center;
   align-items: center;
 }
+.team-icon svg {
+  transition: var(--transition);
+  fill: #acacac;
+  
+  /* height: 20px;
+  width: 20px; */
+}
+.team-icon:hover {
+  background: var(--buttonColor);
+}
+.team-icon:hover svg {
+  fill: #444;
+}
 .team-icons-container {
   display: flex;
   gap: 1rem;
   margin-right: 3rem;
-}
-.team-icon:hover {
-  background: var(--buttonColor);
 }
 .team-icon:hover .slider-icon {
   color: var(--clr-white);
@@ -855,7 +789,7 @@ Clients section
 .clients-section {
   padding-top: 2rem;
   padding-left: 2rem;
-  width: 390px;
+  max-width: 390px;
   min-height: 300px;
   background: var(--clr-white);
   border-radius: 15px;
@@ -879,14 +813,17 @@ Clients section
   height: 70px;
 }
 .client-company {
-  margin-top: 1.5rem;
+  margin-top: 15px;
   background: var(--lightBg);
   color: var(--buttonColor);
   height: 35px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   align-items: center;
+  word-wrap: normal;
+  flex-wrap: nowrap;
+  overflow-wrap: nowrap;
 }
 @media screen and (min-width: 768px) {
   .clients-section-container {

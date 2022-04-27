@@ -263,6 +263,13 @@ h3 {
     padding-top: 3px;
 }
 
+:is(.parent-box, .parent-box-one, .parent-box-two, .parent-box-three) h3 {
+  padding: 0 0 0 1rem;
+  padding-top: 3px;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
 .parent-box-one {
     width: 95%;
     height: 3.1rem;
@@ -466,8 +473,7 @@ iframe#gmap-canvas {
         width: 70%;
     }
     label button {
-        width: 8rem;
-        height: 2rem;
+        
     }
     .dropdown {
         width: 70%;
@@ -493,6 +499,11 @@ iframe#gmap-canvas {
     .parent-box-three {
         font-size: 0.85rem;
     }
+    .parent-box p,
+:is(.parent-box, .parent-box-one, .parent-box-two, .parent-box-three) h3 {
+
+  font-size: 0.9rem;
+}
     .image-container {
         width: 100%;
         display: flex;
@@ -540,7 +551,7 @@ iframe#gmap-canvas {
     .parent-box-one,
     .parent-box-two,
     .parent-box-three {
-        width: 90%;
+        width: 100%;
     }
     .image-container {
         width: 100%;
@@ -573,6 +584,7 @@ iframe#gmap-canvas {
         display: flex;
         width: 95%;
         margin: auto;
+        padding-bottom: 3em;
     }
     .wrapper {
         margin: 0;

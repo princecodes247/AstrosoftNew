@@ -35,12 +35,39 @@
               </button>
           </li>
       </ul>
-      <div class="mobile_only header_ham">
+      <div id="nav-menu" class="mobile_only header_ham">
           <div class="header_ham__line"></div>
           <div class="header_ham__line"></div>
           <div class="header_ham__line"></div>
       </div>
   </header>
+      <!--Sidebar Menu-->
+      <section class="sidebar-menu">
+        <div class="sidebar-dark-container"></div>
+
+        <div class="sidebar-menu-container">
+          <div class="close-btn-container">
+            <span><i class="fa fa-times" id="close-btn" aria-hidden="true"></i></span>
+
+          </div>
+          <ul class="sidebar-links">
+            <li><a href="/">Home</a></li>
+            <li>
+              <a href="/about.html"
+              >About
+            </a>
+          </li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/team.html">Team</a></li>
+          <li >
+            <a class="btn" href="/contact.html">Contact Us </a>
+          </li>
+        </ul>
+      </div>
+      </section>
+    <!--End of Sidebar-->
+    
     <main data-barba="container" data-barba-namespace="page-a">
         <section class="sect banner_sect banner_sect--big">
           <svg class="banner_wave" viewBox="0 0 1400 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,6 +93,9 @@
             </div>
             <div class="sect_img"></div>
           </section>
+           <!--End of Banner -->
+
+  
            <!--About Text-->
            <section class="about-texts">
               <article class="about-header">
@@ -123,7 +153,7 @@
                       </sub>
                   </p>
                   <h3>
-                      We have completed <span class="highlight_text">150+ <br/> Projects</span> Successfully
+                      We have completed <span class="highlight_text">150+ <br class="desktop--hidden"/> Projects</span> Successfully
                   </h3>
                   <p>
                       While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
@@ -451,11 +481,14 @@
                 </div>
                     <div class="team-icons-container">
     
-                <div class=" team-icon team-prev-icon">
-                    <span id="prev-arrow"><i class="fa fa-chevron-left slider-icon" aria-hidden="true"></i></span>
+                <div class="team-icon team-prev-icon" id="prev-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M14 18 8 12 14 6 15.4 7.4 10.8 12 15.4 16.6Z"/></svg>
+                      
+                    
                 </div> 
-                <div class=" team-icon team-next-icon">
-                    <span id="next-arrow"><i class="fa fa-chevron-right slider-icon" aria-hidden="true"></i></span>
+                <div class=" team-icon team-next-icon" id="next-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M9.4 18 8 16.6 12.6 12 8 7.4 9.4 6 15.4 12Z"/></svg>
+                    
                 </div>
             </div>
         </div>
@@ -600,7 +633,11 @@
     </div>
     </div>
     <!--End of Single Contact Means-->
-    
+    <div class="rocket-container">
+      <div><img src="./assets/images/noto_rocket.png" alt="" class="rocket"></div>
+      <a href="#main"><img src="./assets/images/navigation-icon.png" alt="" class="navigation-icon"></a>
+      
+    </div>
   </article>
   
   <div class="nav-links-container footer-links">
@@ -676,11 +713,7 @@
           </a>
       </div>
   </div>
-  <div class="rocket-container">
-    <div><img src="./assets/images/noto_rocket.png" alt="" class="rocket"></div>
-    <a href="#main"><img src="./assets/images/navigation-icon.png" alt="" class="navigation-icon"></a>
-    
-  </div>
+ 
       </footer>
       <script src="./assets/js/header.js"></script>
       <script src='./assets/js/about.js'></script>

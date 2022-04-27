@@ -90,30 +90,32 @@
  
 }
 
-nav {
+.portfolio_nav {
     margin-bottom: 3em;
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-nav ul {
+.portfolio_nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     gap: 1em;
     list-style: none;
     width: 100%;
     text-align: center;
+    
+        margin-left: 0;
 }
-nav ul li {
+.portfolio_nav ul li {
     word-wrap: none;
     font-weight: 400;
     position: relative;
 }
-nav ul li:hover {
+.portfolio_nav ul li:hover {
     color: var(--secondary-color);
 }
-nav ul li::before {
+.portfolio_nav ul li::before {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -124,7 +126,7 @@ nav ul li::before {
     opacity: 0.5;
     transition: width ease-in-out 200ms
 }
-nav ul li:hover::before {
+.portfolio_nav ul li:hover::before {
     left: 0;
     right: unset;
     opacity: 0.5;
